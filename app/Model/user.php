@@ -30,9 +30,16 @@ App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
                 )  
             ),
             'role' => array(
-                'valid' => array(
+                'role' => array(
                     'rule' => array('NotEmpty', array('admin', 'author')),
                     'message' => 'Please try again',
+                    'allowEmpty' => 'false'
+                )
+            ),
+            'status' => array(
+                'status' => array(
+                    'rule' => array('inlist', array('0', '1')),
+                    'message' => 'Plase try again',
                     'allowEmpty' => 'false'
                 )
             )
