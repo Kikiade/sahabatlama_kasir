@@ -5,15 +5,15 @@
         var $components = array('Session');
         
         function index(){
-            $this->set('staffs', $this->Post->find('all'));
+            $this->set('staffs', $this->Staff->find('all'));
         }
         function view(){
             $this->Staff->id = $id;
             if(!$id){
                 throw new NotFoundException(__('Invalid Entry'));
             }
-            $post = $this->Staff->findById($id);
-            if(!id){
+            $staff = $this->Staff->findById($id);
+            if(!$staff){
                 throw new NotFoundException(__('Invalid Entry'));
             }
             $this->set('staff', $staff);
@@ -26,6 +26,26 @@
                     return $this->redirect(array('action' => 'index'));
                 }
                 $this->Session->setFlash(__('Unable to add your staff'));
+            }
+        }
+        function edit($id = null) {
+            if(!$id){
+                throw new NotFoundException(__('Invalid Entry'));
+            }
+            $staff = $this->Staff->findById($id);
+            if(!$staff){
+                throw new NotFoundException(__('Invalid Entry'));
+            }
+            if($this->request->is(array('post', 'put'))){
+                $this->Staff->id = $id;
+                if($this->Staff->data($this->request->data)){
+                    $this->Session->setFlash(__('Your staff has been update'));
+                    return $this->redirect(array('action'=> 'index'));
+                }
+                $this->Session->setFlash(__('Unable to update your staff'));
+            }
+            if(!$this->request->data){
+                $this->request->data = $staff;
             }
         }
     }
