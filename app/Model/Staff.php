@@ -1,14 +1,14 @@
 <?php
     class Staff extends AppModel{
         public $validate = array(
-            'name' => array (
-                'rule' => 'notEmpty'
+            'name' => array'(
+                'rule' => 'NotEmpty'
             ),
             'address' => array(
-                'rule' => 'notEmpty'
+                'rule' => 'NotEmpty'
             ),
             'mobile_phone' => array(
-                'rule' => 'notEmpty'
+                'rule' => 'NotEmpty'
             ),
             'status' => array(
                 'valid' => array(
