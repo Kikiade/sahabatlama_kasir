@@ -1,19 +1,26 @@
+<h1>Category</h1>
+
 <?php
-<p><?php echo $this->Html->link(__("Add Categorie", true), add); ?></p>
+    echo $this->Html->link(
+        'Add Staff',
+        array('controller' => 'vehicle_categories', 'action','add')
+    );
+?>
+
 <table>
     <tr>
-        <th>Id</th>
-        <th>Categorie</th>
-        <th>Action</th>
+    	<th>Id</th>
+        <th>Nama</th>
+        <th>Price</th>
+        <th>Status</th>
     </tr>
-
-    <?php foreach ($categories as $categorie): ?>
-        <tr>
-            <td><?php echo $categorie['Categorie']['id']; ?></td>
-            <td>
-                <?php echo $categorie['Categorie']['venue'];?>
-            </td>     
-        </tr>
-    <?php endforeach; ?>    
-</table>    
-?>
+    <?php foreach($vehicle_categories as $category): ?>
+    <tr>
+        <td><?php echo $category['Category']['id']; ?></td>
+        <td><?php echo $category['Category']['name']; ?></td>
+        <td><?php echo $category['Category']['price']; ?></td>
+        <td><?php echo $category['Category']['status']; ?></td>
+    </tr>
+    <?php endforeach; ?>
+    <?php unset ($category); ?>
+</table>
