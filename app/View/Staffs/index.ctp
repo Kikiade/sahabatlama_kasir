@@ -22,5 +22,5 @@
         <td><?php echo $staff['Staff']['created']; ?></td>
     </tr>
     <?php endforeach; ?>
-    <?php unset $staff; ?>
+    <?php unset ($staff); ?>
 </table>
