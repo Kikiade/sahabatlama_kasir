@@ -7,10 +7,12 @@
 ?>
 <table>
     <tr>
-        <th>Nama</th>
+        <th>Id</th>
+        <th>Name</th>
         <th>Address</th>
         <th>Mobile Phone</th>
         <th>Status</th>
+        <th>Created</th>
     </tr>
     <?php foreach($staffs as $staff): ?>
     <tr>
@@ -22,5 +24,5 @@
         <td><?php echo $staff['Staff']['created']; ?></td>
     </tr>
     <?php endforeach; ?>
-    <?php unset $staff; ?>
+    <?php unset ($staff); ?>
 </table>
