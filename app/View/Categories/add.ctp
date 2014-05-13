@@ -1,6 +1,7 @@
-<h1>Add Categories</h1>
 <?php
-    echo $this->Form->create('categorie);
-    echo $this->Form->input('title');
-    echo $this->Form->end('save');
+		echo $this->Form->create('Category');
+		echo $this->Form->input('name');
+		echo $this->Form->input('price');
+		echo $this->Form->input('nyuci_share');
+		echo $this->Form->input('status', array('options' => array(0,1), 'empty' => ('choose one')))
 ?>
