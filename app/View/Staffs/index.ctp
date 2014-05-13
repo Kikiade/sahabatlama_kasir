@@ -2,7 +2,7 @@
 <?php
     echo $this->Html->link(
         'Add Staff',
-        array('controller' => 'staffs', 'action','add')
+        array('controller' => 'staff', 'action','add')
     );
 ?>
 <table>

@@ -24,10 +24,8 @@ App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
                 )
             ),
             'password' => array(
-                'required' => array(
-                    'rule' => array('notEmpty'),
-                    'message' => 'Password is Required'
-                )  
+                'rule' => array('minLength', '8'),
+                'message' => 'Password minimum 8 characters'
             ),
             'role' => array(
                 'role' => array(

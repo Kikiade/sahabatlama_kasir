@@ -8,6 +8,7 @@
             $this->set('staffs', $this->Post->find('all'));
         }
         function view(){
+            $this->Staff->id = $id;
             if(!$id){
                 throw new NotFoundException(__('Invalid Entry'));
             }
