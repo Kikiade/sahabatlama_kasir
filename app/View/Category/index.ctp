@@ -7,7 +7,8 @@
     );
 ?>
 
-<table>
+<fieldset>
+<table style="border:solid">
     <tr>
     	<th>Id</th>
         <th>Nama</th>
@@ -24,3 +25,4 @@
     <?php endforeach; ?>
     <?php unset ($category); ?>
 </table>
+</fieldset>
