@@ -3,8 +3,8 @@
 		public $helpers = array('Html','Form');
 		
 		public function index(){
-			$this->set('vehicle_categories', $categories);
-			$categories = $this->VehicleCategories->find('all');	
+			$categories = $this->VehicleCategory->find('all');
+			$this->set('vehicle_categories', $categories);	
 		}
 		
 		public function add(){
