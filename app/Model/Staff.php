@@ -1,7 +1,7 @@
 <?php
     class Staff extends AppModel{
         public $validate = array(
-            'name' => array'(
+            'name' => array (
                 'rule' => 'NotEmpty'
             ),
             'address' => array(
