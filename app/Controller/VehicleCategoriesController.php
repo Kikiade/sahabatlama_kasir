@@ -18,5 +18,16 @@
 				$this->Session->setflash(__('Unable to add new categories'));
 			}
 		}
+		
+		public function view($id = null){
+			if(!$id){
+				throw new NotFoundException(__('Invalid Category'));
+			}
+			$categories = $this->VehicleCategory->findById($id);
+			if(!$id){
+				throw new NotFoundException(__('Invalid Category'));
+			}
+			$this->set('post', $categories);
+		}
 	}
 ?>

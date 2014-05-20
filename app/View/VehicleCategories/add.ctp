@@ -5,4 +5,5 @@
 	echo $this->Form->input('price');
 	echo $this->Form->input('nyuci_share');
 	echo $this->Form->input('status', array('options' => array('0' => 'Not Active', '1' => 'Active')));
+	echo $this->Form->end('Save Post');
 ?>
