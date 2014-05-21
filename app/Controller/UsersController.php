@@ -90,5 +90,6 @@
                 $this->authenticate;
             }
         }
+        
     } 
 ?>
