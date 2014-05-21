@@ -1,4 +1,3 @@
-<h1>Staff</h1>
 <?php
     echo $this->Html->link(
         'Add Staff',
@@ -13,6 +12,7 @@
         <th>Mobile Phone</th>
         <th>Status</th>
         <th>Created</th>
+        <th>Action</th>
     </tr>
     <?php foreach($staffs as $staff): ?>
     <tr>
@@ -22,6 +22,27 @@
         <td><?php echo $staff['Staff']['mobile_phone']; ?></td>
         <td><?php echo $staff['Staff']['status']; ?></td>
         <td><?php echo $staff['Staff']['created']; ?></td>
+        <td>
+            <?php
+                echo $this->Html->link('View', array('action' => 'view', $staff['Staff']['id']));
+            ?>
+        </td>
+        <td>
+            <?php
+                echo $this->Html->link('Edit', array('action' => 'edit', $staff['Staff']['id']));
+            ?>
+        </td>
+        <td>
+            <?php
+                echo $this->Form->postlink('Delete', array('action' => 'delete', $staff['Staff']['id']),
+                                           array('confirm'=>'Are you sure'));
+            ?>
+        </td>
+        <td>
+            <?php
+                echo $this->Html->link('Hide', array('action' => 'hide', $staff['Staff']['id']));
+            ?>
+        </td>
     </tr>
     <?php endforeach; ?>
     <?php unset ($staff); ?>

@@ -78,13 +78,13 @@
         function logout(){
             return $this->redirect($this->Auth->logout());
         }
-        
+       /** 
         function authenticate(){
             if(!$this->Session->check('User')){
-                $this->redirect(array('controller' => 'users', 'action' => 'index'));
+                 $this->redirect(array('controller' => 'users', 'action' => 'index'));
             }
         }
-        
+        **/
         function afterFilter(){
             if($this->action != 'user'){
                 $this->authenticate;
