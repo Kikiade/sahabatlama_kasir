@@ -2,12 +2,6 @@
 	class VehicleCategoriesController extends AppController{
 		public $helpers = array('Html','Form');
 		
-		public function beforeFilter(){
-			parent::beforeFilter();
-		            $this->Auth->allow('add', 'edit', 'Form');
-	        }
-		
-		
 		public function beforeFilter()
 		{
 			$this->Auth->allow('index', 'view');
