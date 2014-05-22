@@ -40,7 +40,7 @@
         </td>
         <td>
             <?php
-                echo $this->Html->link('Hide', array('action' => 'hide', $staff['Staff']['id']));
+                echo $this->Html->link('Hide', array('action' => 'hidden', $staff['Staff']['id']));
             ?>
         </td>
     </tr>

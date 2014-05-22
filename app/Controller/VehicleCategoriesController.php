@@ -3,9 +3,21 @@
 		public $helpers = array('Html','Form', 'Session');
 		public $components = array ('Session');
 		
+		
+		public function beforeFilter()
+		{
+			$this->Auth->allow('index', 'view');
+		}
 		public function index(){
 			$categories = $this->VehicleCategory->find('all');
-			$this->set('vehicle_categories', $categories);	
+			$this->set('vehicle_categories', $categories);
+			
+			$data	=	$this->VehicleCategory->find("all",array(
+						"conditions"	=>	array(
+							"VehicleCategory.id"	=>	"1"
+						)
+					));
+			pr($data);
 		}
 		
 		public function add(){
