@@ -4,8 +4,8 @@
 		
 		public function beforeFilter(){
 			parent::beforeFilter();
-            $this->Auth->allow('add', 'edit', 'Form');
-        }
+		            $this->Auth->allow('add', 'edit', 'Form');
+	        }
 		
 		
 		public function beforeFilter()
