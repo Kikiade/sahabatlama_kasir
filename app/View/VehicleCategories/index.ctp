@@ -19,8 +19,14 @@
         <td style="border:solid; border-width:1px"><?php echo $categories['VehicleCategory']['name']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $categories['VehicleCategory']['price']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $categories['VehicleCategory']['status']; ?></td>
-        <td style="border:solid; border-width:1px">
-			<?php echo $this->Html->link('View', array('controller' => 'vehicle_categories', 'action' => 'view', $categories['VehicleCategory']['id'])); ?> <?php echo $this->Html->link('Edit', array('controller' => 'vehicle_categories', 'action' => 'edit', $categories['VehicleCategory']['id'])); ?></td> 
+        <td style="border:solid; border-width:1px" width="200px">
+			<?php echo $this->Html->link('View', array('controller' => 'vehicle_categories', 'action' => 'view', 
+				$categories['VehicleCategory']['id'])); ?> 
+			<?php echo $this->Html->link('Edit', array('controller' => 'vehicle_categories', 'action' => 'edit', 
+				$categories['VehicleCategory']['id'])); ?>
+            <?php echo $this->Html->link('Hide', array('controller' => 'vehicle_categories', 'action' => 'hide', 
+				$categories['VehicleCategory']['id'])); ?>
+         </td> 
     </tr>
     <?php endforeach; ?>
     <?php unset ($categories); ?>

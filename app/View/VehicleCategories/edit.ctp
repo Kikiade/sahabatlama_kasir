@@ -1,6 +1,5 @@
-<h1>Add Category</h1>
+<h1>Edit</h1>
 
-<fieldset>
 <?php
 	echo $this->Form->create('VehicleCategory');
 	echo $this->Form->input('name');
@@ -10,4 +9,3 @@
 	echo $this->Form->input('status', array('options' => $status));
 	echo $this->Form->end('Save');
 ?>
-</fieldset>
