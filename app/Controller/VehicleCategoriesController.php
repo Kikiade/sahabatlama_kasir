@@ -4,7 +4,7 @@
 		
 		public function beforeFilter()
 		{
-			$this->Auth->allow('index', 'view');
+			$this->Auth->allow('index', 'view', 'add', 'edit');
 		}
 		public function index(){
 			$categories = $this->VehicleCategory->find('all');
