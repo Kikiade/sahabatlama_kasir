@@ -2,7 +2,7 @@
 	class VehicleCategory extends AppModel{
 		
 		var $hasMany	=	array(
-						"VehicleCategoryCost"
+						"VehicleCategoryCost", "Customer"
 					);
 					
 		public $validate = array(
