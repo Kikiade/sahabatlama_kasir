@@ -8,7 +8,15 @@
             $this->Auth->allow('index', 'view');
         }
         function index(){
-            $this->set('vehiclecategorycosts', $this->VehicleCategoryCost->find('all'));
+            $vehicle_category_costs = $this->VehicleCategoryCost->find('all');
+			$this->set('vehicle_category_costs', $vehicle_category_costs);
+			
+			$data	=	$this->VehicleCategoryCost->find('all',array(
+						"conditions"	=>	array(
+							"VehicleCategoryCost.id"	=>	"1"
+						)
+					));
+			pr($data);
         }
         function veiw($id){
             if (!$id){

@@ -9,7 +9,7 @@
         <th>Created</th>
         <th>Action</th>
     </tr>
-    <?php foreach ($vehiclecategorycosts as $vehiclecategorycost): ?>
+    <?php foreach ($vehicle_category_costs as $vehiclecategorycost): ?>
         <tr>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['id']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['name']; ?></td>
