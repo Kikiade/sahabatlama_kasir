@@ -23,5 +23,5 @@
             <td><?php echo $this->Html->link('Hide', array('action' => 'hide', $vehiclecategorycost['VehicleCategoryCost']['id']));?></td>
         </tr>
     <?php endforeach ;?>
-    <?php unset ('$vehiclecategorycost')?>
+    <?php unset ($vehiclecategorycost); ?>
 </table>
