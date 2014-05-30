@@ -1,4 +1,5 @@
 <h1>Vehicle Category Cost</h1>
+<p><?php echo $this->Html->link('Add Vehicle Category Cost', array('action' => 'add')); ?></p>
 <table>
     <tr>
         <th>Id</th>

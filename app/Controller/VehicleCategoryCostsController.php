@@ -5,7 +5,7 @@
         var $components = array('Session');
        
         function beforeFilter(){
-            $this->Auth->allow('index', 'view');
+            $this->Auth->allow('index', 'view', 'add', 'edit');
         }
         function index(){
             $vehicle_category_costs = $this->VehicleCategoryCost->find('all');
@@ -38,7 +38,7 @@
                 $this->Session->setFlash(__('Unable to add your Vahicle Category Cost'));
             }
         }
-        function edit(){
+        function edit($id = null){
             if($id){
                 throw new NotFoundException(__('Invalid Vehicle Category Cost'));
             }
