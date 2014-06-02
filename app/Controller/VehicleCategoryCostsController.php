@@ -38,13 +38,17 @@
             }
         }
         function edit($id = null){
+            /*
             if($id){
                 throw new NotFoundException(__('Invalid Vehicle Category Cost'));
             }
-            $vehiclecategorycost = $this->VehicleCategoryCost->findById('all');
+            */
+            $vehiclecategorycost = $this->VehicleCategoryCost->findById($id);
+                /*
                 if(!vehiclecategorycost){
                     throw new NotFoundException(__('invalid VehicleCategoriesCost'));
                 }
+                */
                 if($this->request->is(array('post', 'put'))){
                     $this->VehicleCategoryCost->id = $id;
                     if($this->VehicleCategoryCost->save($this->request->data)){
@@ -57,6 +61,23 @@
                 $this->request->data = $vehiclecategorycost;
             }
         }
-        
+        function delete($id){
+            /*
+            if($this->request->is('get')){
+                throw new MethodNotAllowedException();
+            }
+            */
+            if($this->VehicleCategoryCost->delete($id)){
+                $this->Session->setFlash(
+                    __('The vehicle category cost with id %s has been deleted.', ($id))
+                );
+                return $this->redirect(array('action' => 'index'));
+            }
+        }
+        function afterFilter(){
+            if($this->action!= 'vehiclecategorycost'){
+                $this->authenticate;
+            }
+        }
     }
 ?>
