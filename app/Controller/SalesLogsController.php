@@ -27,7 +27,7 @@
 				throw new NotFoundException(__('Invalid Sales Log'));
 			}
 			*/
-			$saleslog = $this->VehicleCategory->findById($id);
+			$saleslog = $this->SalesLog->findById($id);
 			if(!$id){
 				throw new NotFoundException(__('Invalid Sales Log'));
 			}
