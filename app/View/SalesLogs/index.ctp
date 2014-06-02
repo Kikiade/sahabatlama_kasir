@@ -10,13 +10,13 @@
 	<th>Transaction Time</th>
 </tr>
 
-<?php foreach ($sales_logs as $SalesLog); ?>
+<?php foreach ($sales_logs as $saleslog); ?>
 <tr>
-<td><?php echo $SalesLog['SalesLog']['id'] ?></td>
-<td><?php echo $SalesLog['SalesLog']['staff_id'] ?></td>
-<td><?php echo $SalesLog['SalesLog']['vehicle_id'] ?></td>
-<td><?php echo $SalesLog['SalesLog']['user_id'] ?></td>
-<td><?php echo $SalesLog['SalesLog']['transaction_time'] ?></td>
+<td><?php echo $saleslog['SalesLog']['id'] ?></td>
+<td><?php echo $saleslog['SalesLog']['staff_id'] ?></td>
+<td><?php echo $saleslog['SalesLog']['vehicle_id'] ?></td>
+<td><?php echo $saleslog['SalesLog']['user_id'] ?></td>
+<td><?php echo $saleslog['SalesLog']['transaction_time'] ?></td>
 </tr>
 </table>
 </fieldset>
