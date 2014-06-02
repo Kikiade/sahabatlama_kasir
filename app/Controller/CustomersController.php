@@ -3,7 +3,7 @@
 	{
 		public function beforeFilter()
 		{
-			$this->Auth->allow('index', 'view', 'add', 'edit');
+			$this->Auth->allow('index', 'view', 'add', 'edit', 'delete');
 		}
 		
 		public function index()
@@ -57,6 +57,15 @@
 			}
 			if(!$this->request->data){
 				$this->request->data = $customers;
+			}
+		}
+		
+		public function delete($id = null){
+			if($this->Customer->delete($id)){
+				$this->Session->setFlash(
+				   __('The Vehicle Categories with id %s has been deleted.', ($id))
+			);
+			return $this->redirect(array('action' => 'index'));
 			}
 		}
 	}

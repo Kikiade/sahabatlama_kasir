@@ -26,7 +26,7 @@
 				$customer['Customer']['id'])); ?> 
 			<?php echo $this->Html->link('Edit', array('controller' => 'customers', 'action' => 'edit', 
 				$customer['Customer']['id'])); ?>
-            <?php echo $this->Html->link('Hide', array('controller' => 'customers', 'action' => 'hide', 
+            <?php echo $this->Html->link('Delete', array('controller' => 'customers', 'action' => 'delete', 
 				$customer['Customer']['id'])); ?>
          </td> 
     </tr>

@@ -1,6 +1,6 @@
 <h1>Edit Vehicle Category Cost</h1>
 <?php
-    echo $this->Form->Create('vehiclecategorycost');
+    echo $this->Form->Create('VehicleCategoryCost');
     echo $this->Form->input('name');
     echo $this->Form->input('cost');
     echo $this->Form->input('status');

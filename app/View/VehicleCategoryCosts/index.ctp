@@ -18,10 +18,21 @@
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['vehicle_category_id']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['status']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['created']; ?></td>
-            <td><?php echo $this->Html->link('View', array('action' => 'view', $vehiclecategorycost['VehicleCategoryCost']['id']));?></td>
-            <td><?php echo $this->Html->link('Edit', array('action' => 'edit', $vehiclecategorycost['VehicleCategoryCost']['id']));?></td>
-            <td><?php echo $this->Html->link('Delete', array('action' => 'delete', $vehiclecategorycost['VehicleCategoryCost']['id']));?></td>
+            <td>
+                <?php
+                    echo $this->Html->link('View', array('action' => 'view', $vehiclecategorycost['VehicleCategoryCost']['id']));
+                ?>
+            </td>
+            <td>
+                <?php
+                    echo $this->Html->link('Edit', array('action' => 'edit', $vehiclecategorycost['VehicleCategoryCost']['id']));
+                ?>
+            </td>
+            <td>    
+                <?php
+                    echo $this->Html->link('Delete', array('action' => 'delete', $vehiclecategorycost['VehicleCategoryCost']['id']));
+                ?>
+            </td>
         </tr>
     <?php endforeach ;?>
-    <?php unset ($vehiclecategorycost); ?>
 </table>

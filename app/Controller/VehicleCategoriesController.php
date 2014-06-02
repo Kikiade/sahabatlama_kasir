@@ -4,7 +4,7 @@
 		
 		public function beforeFilter()
 		{
-			$this->Auth->allow('index', 'view', 'add', 'edit');
+			$this->Auth->allow('index', 'view', 'add', 'edit', 'delete');
 		}
 		public function index(){
 			$categories = $this->VehicleCategory->find('all');
@@ -62,6 +62,17 @@
 				$this->request->data = $categories;
 			}
 		}
+		public function delete($id){
+		   /*if($this->request->is('get')){
+		       throw new MethodNotAllowedException();
+		   }*/
+		   if($this->VehicleCategory->delete($id)){
+		       $this->Session->setFlash(
+		           __('The Vehicle Categories with id %s has been deleted.', ($id))
+			);
+			 return $this->redirect(array('action' => 'index'));
+			}
+	       }
 		
 	}
 ?>
