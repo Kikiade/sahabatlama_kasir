@@ -35,4 +35,5 @@
             </td>
         </tr>
     <?php endforeach ;?>
+    <?php unset($vehiclecategorycost);?>
 </table>
