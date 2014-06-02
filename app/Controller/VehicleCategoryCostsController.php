@@ -1,6 +1,5 @@
 <?php
     class VehicleCategoryCostsController extends AppController{
-        var $name = 'VehicleCategoryCosts';
         var $helpers = array('Html', 'Form');
         var $components = array('Session');
        
