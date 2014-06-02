@@ -24,7 +24,7 @@
 				$categories['VehicleCategory']['id'])); ?> 
 			<?php echo $this->Html->link('Edit', array('controller' => 'vehicle_categories', 'action' => 'edit', 
 				$categories['VehicleCategory']['id'])); ?>
-            <?php echo $this->Html->link('Hide', array('controller' => 'vehicle_categories', 'action' => 'hide', 
+            <?php echo $this->Html->link('Delete', array('controller' => 'vehicle_categories', 'action' => 'delete', 
 				$categories['VehicleCategory']['id'])); ?>
          </td> 
     </tr>

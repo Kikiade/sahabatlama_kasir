@@ -38,11 +38,6 @@
                                            array('confirm'=>'Are you sure'));
             ?>
         </td>
-        <td>
-            <?php
-                echo $this->Html->link('Hide', array('action' => 'hidden', $staff['Staff']['id']));
-            ?>
-        </td>
     </tr>
     <?php endforeach; ?>
     <?php unset ($staff); ?>

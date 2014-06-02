@@ -21,7 +21,6 @@
         <td><?php echo $this->Html->link('View', array('action' => 'view', $user['User']['id']));?></td>
         <td><?php echo $this->Html->link('Edit', array('action' => 'edit', $user['User']['id']));?></td>
         <td><?php echo $this->Html->link('Delete', array('action' => 'delete', $user['User']['id']));?></td>
-        <td><?php echo $this->Html->link('Hide', array('action' => 'hide', $user['User']['id']));?></td>
     </tr>
     <?php endforeach;?>
     <?php unset ($user); ?>

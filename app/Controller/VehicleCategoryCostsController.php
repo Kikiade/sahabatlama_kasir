@@ -5,7 +5,7 @@
         var $components = array('Session');
        
         function beforeFilter(){
-            $this->Auth->allow('index', 'view', 'add', 'edit');
+            $this->Auth->allow('index', 'view', 'add', 'edit', 'delete');
         }
         function index(){
             $vehicle_category_costs = $this->VehicleCategoryCost->find('all');
