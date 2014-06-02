@@ -4,9 +4,10 @@
 <table>
 <tr>
 	<th>Id</th>
-	<th>Staff Id</th>
-	<th>Vehicle Id</th>
-	<th>User Id</th>
+	<th>Staff</th>
+	<th>Vehicle</th>
+	<th>Price</th>
+	<th>Share</th>
 	<th>Transaction Time</th>
 	<th>Action</th>
 </tr>
@@ -14,9 +15,10 @@
 <?php foreach ($sales_logs as $saleslog); ?>
 <tr>
 <td><?php echo $saleslog['SalesLog']['id'] ?></td>
-<td><?php echo $saleslog['SalesLog']['staff_id'] ?></td>
-<td><?php echo $saleslog['SalesLog']['vehicle_id'] ?></td>
-<td><?php echo $saleslog['SalesLog']['user_id'] ?></td>
+<td><?php echo $saleslog['Staff']['name'] ?></td>
+<td><?php echo $saleslog['VehicleCategory']['name'] ?></td>
+<td><?php echo $saleslog['VehicleCategory']['price'] ?></td>
+<td><?php echo $saleslog['VehicleCategory']['nyuci_share'] ?></td>
 <td><?php echo $saleslog['SalesLog']['transaction_time'] ?></td>
 <td>
 	<?php echo $this->Html->link('View', array('action' => 'view', $saleslog['SalesLog']['id'])); ?>
