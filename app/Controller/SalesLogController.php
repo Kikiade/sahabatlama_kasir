@@ -6,6 +6,9 @@
 		{
 			$this->Auth->allow('index', 'view', 'add', 'edit', 'delete');
 		}
+		function index(){
+			$this->set('sales_logs', $this->SalesLog->find('all'));
+		}
 		
 		function add()
 		{
