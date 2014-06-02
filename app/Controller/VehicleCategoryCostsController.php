@@ -18,15 +18,15 @@
 					));
 			pr($data);
         }
-        function veiw($id){
+        function view($id = null){
             if (!$id){
                 throw new NotFoundException(__('Invalid Vehicle Category Cost'));                                                                                           
             }
-            $vehiclecategorycost = $this->VehicleCategoryCost->findById('all');
+            $vehicle_category_costs = $this->VehicleCategoryCost->findById($id);
             if (!$id){
                 throw new NotFoundException(__('Invalid Vehicle Category Cost'));
             }
-             $this->set('vehiclecategorycost', $vehiclecategorycost);
+             $this->set('post', $vehicle_category_costs);
         }    
         function add(){    
             if($this->request->is('post')){
