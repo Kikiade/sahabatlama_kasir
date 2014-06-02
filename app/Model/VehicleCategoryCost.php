@@ -1,9 +1,10 @@
 <?php
     class VehicleCategoryCost extends AppModel{
         public $belongsTo = array(
-            'VehicleCategoryId' => array(
-                'className' => 'vehicle_category',
-                'foreignKey' => 'vehicle_category_id'
+            'VehicleCategory' => array(
+                'className' => 'VehicleCategory',
+                'foreignKey' => 'vehicle_category_id',
+                'fields' => array('VehicleCategory.name')
             )
         );
         

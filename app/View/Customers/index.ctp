@@ -10,6 +10,7 @@
     	<th style="border:solid; border-width:1px">Id</th>
         <th style="border:solid; border-width:1px">Nama</th>
         <th style="border:solid; border-width:1px">Vehicle Number</th>
+	<th style="border:solid; border-width:1px">Vehicle Category Name</th>
         <th style="border:solid; border-width:1px">Status</th>
         <th style="border:solid; border-width:1px">Created</th>
         <th style="border:solid; border-width:1px">Action</th>
@@ -19,6 +20,7 @@
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['id']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['name']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['vehicle_number']; ?></td>
+	<td style="border:solid; border-width:1px"><?php echo $customer['VehicleCategoryId']['name']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['status']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['created']; ?></td>
         <td style="border:solid; border-width:1px" width="200px">

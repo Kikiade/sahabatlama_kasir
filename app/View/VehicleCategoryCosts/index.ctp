@@ -5,7 +5,7 @@
         <th>Id</th>
         <th>Name</th>
         <th>Costs</th>
-        <th>Vehicle Category ID</th>
+        <th>Vehicle Category Name</th>
         <th>Status</th>
         <th>Created</th>
         <th>Action</th>
@@ -15,7 +15,7 @@
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['id']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['name']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['cost']; ?></td>
-            <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['vehicle_category_id']; ?></td>
+            <td><?php echo $vehiclecategorycost ['VehicleCategory']['name']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['status']; ?></td>
             <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['created']; ?></td>
             <td>
