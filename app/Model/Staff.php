@@ -1,5 +1,7 @@
 <?php
     class Staff extends AppModel{
+        var $hasMany    =   array( "SalesLog");
+
         public $validate = array(
             'name' => array (
                 'rule' => 'NotEmpty'

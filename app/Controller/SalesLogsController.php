@@ -8,6 +8,12 @@
 		}
 		function index(){
 			$this->set('sales_logs', $this->SalesLog->find('all'));
+			$data	=	$this->SalesLog->find("all",array(
+						"conditions"	=>	array(
+							"SalesLog.id"	=>	"1"
+						)
+					));
+			pr($data);
 		}
 		
 		function add()
