@@ -20,7 +20,7 @@
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['id']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['name']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['vehicle_number']; ?></td>
-	<td style="border:solid; border-width:1px"><?php echo $customer['VehicleCategoryId']['name']; ?></td>
+	<td style="border:solid; border-width:1px"><?php echo $customer['VehicleCategory']['name']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['status']; ?></td>
         <td style="border:solid; border-width:1px"><?php echo $customer['Customer']['created']; ?></td>
         <td style="border:solid; border-width:1px" width="200px">

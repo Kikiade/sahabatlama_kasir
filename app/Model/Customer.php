@@ -1,8 +1,8 @@
 <?php
 	class Customer extends AppModel{
 		var $belongsTo = array(
-			'VehicleCategoryId' => array(
-				'className' => 'vehicle_category',
+			'VehicleCategory' => array(
+				'className' => 'VehicleCategory',
 				'foreignKey' => 'vehicle_category_id'
 			   )
 			);
