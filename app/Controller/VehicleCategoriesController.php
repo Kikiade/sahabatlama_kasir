@@ -1,6 +1,7 @@
 <?php
 	class VehicleCategoriesController extends AppController{
-		public $helpers = array('Html','Form');
+		public $helpers = array('Html','Form', 'Paginator');
+		var	$components = array('Session');
 		
 		public function beforeFilter()
 		{
@@ -16,6 +17,13 @@
 						)
 					));
 			pr($data);
+			
+			//paging page
+			$this->paginate = array(
+				 'limit' => 2
+			);
+			$categories = $this->paginate('VehicleCategory');
+			$this->set('vehicle_categories', $categories);
 		}
 		
 		public function add()

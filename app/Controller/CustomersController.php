@@ -1,6 +1,8 @@
 <?php
-	class CustomersController extends AppController
-	{
+	class CustomersController extends AppController{
+		var $helpers = array('Html', 'Form', 'Paginator');
+		var $components = array('Session');
+		
 		public function beforeFilter()
 		{
 			$this->Auth->allow('index', 'view', 'add', 'edit', 'delete');
@@ -13,6 +15,13 @@
 
 			$data = $this->Customer->find('all', array("conditions" => array("Customer.id" => "1")));
 			pr ($data);
+			
+			//paging page
+			$this->paginate = array(
+				 'limit' => 2
+			);
+			$customers = $this->paginate('Customer');
+			$this->set('customers', $customers);
 		}
 
 		public function add()

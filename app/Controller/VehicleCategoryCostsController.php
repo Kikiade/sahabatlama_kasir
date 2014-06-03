@@ -1,6 +1,6 @@
 <?php
     class VehicleCategoryCostsController extends AppController{
-        var $helpers = array('Html', 'Form');
+        var $helpers = array('Html', 'Form', 'Paginator');
         var $components = array('Session');
        
         function beforeFilter(){
@@ -16,6 +16,12 @@
 						)
 					));
 			pr($data);
+            //Paging page            
+            $this->paginate = array(
+                'limit' => 2
+            );
+            $vehicle_category_costs = $this->paginate('VehicleCategoryCost');
+            $this->set('vehicle_category_costs', $vehicle_category_costs);
         }
         function view($id = null){
             if (!$id){

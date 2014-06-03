@@ -3,12 +3,12 @@
 <fieldset>
 <table>
 <tr>
-	<th>Id</th>
-	<th>Staff</th>
-	<th>Vehicle</th>
-	<th>Price</th>
-	<th>Share</th>
-	<th>Transaction Time</th>
+	<th><?php echo $this->Paginator->sort('id','ID');?></th>
+	<th><?php echo $this->Paginator->sort('Staff','Staff');?></th>
+	<th><?php echo $this->Paginator->sort('VehicleCategory','Vehicle Category Name');?></th>
+	<th><?php echo $this->Paginator->sort('VehicleCategory','Price');?></th>
+	<th><?php echo $this->Paginator->sort('VehicleCategory','Nyuci Share');?></th>
+	<th><?php echo $this->Paginator->sort('transaction_time','Transaction Time');?></th>
 	<th>Action</th>
 </tr>
 
@@ -28,3 +28,12 @@
 </tr>
 </table>
 </fieldset>
+<?php
+    echo $this->Paginator->prev(
+        '  Prev ', array(), null, array('class' => 'prev disabled')
+    );
+    echo $this->Paginator->numbers(array('separator' => ' '));
+    echo $this->Paginator->next(
+        ' Next ', array(), null, array('class' => 'next disabled')
+    );
+?>

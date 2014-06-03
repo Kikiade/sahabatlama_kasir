@@ -1,6 +1,7 @@
 <?php
 	class SalesLogsController extends AppController{
-		var $helpers = array('Html', 'Form', 'Session');
+		var $helpers = array('Html', 'Form',  'Paginator');
+		var $components = array('Session');
 		
 		function beforeFilter()
 		{
@@ -14,6 +15,13 @@
 						)
 					));
 			pr($data);
+			
+			//paging page
+			$this->paginate = array(
+				 'limit' => 2
+			);
+			$saleslog = $this->paginate('SalesLog');
+			$this->set('sales_logs', $saleslog);
 		}
 		
 		function add()

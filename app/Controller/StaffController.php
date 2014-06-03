@@ -1,7 +1,7 @@
 <?php
     class StaffController extends AppController{
         var $name = 'Staffs';
-        var $helpers = array('Html', 'Form', 'Session');
+        var $helpers = array('Html', 'Form', 'Session', 'Paginator');
         var $components = array('Session');
 
         function beforeFilter(){
@@ -11,6 +11,13 @@
 
         function index(){
             $this->set('staffs', $this->Staff->find('all'));
+            
+            //paging page
+	    $this->paginate = array(
+		'limit' => 2
+	    );
+            $staff = $this->paginate('Staff');
+	    $this->set('staffs', $staff);
         }
         function view($id = null){
             $this->Staff->id = $id;

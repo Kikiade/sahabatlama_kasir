@@ -7,12 +7,12 @@
 <fieldset>
 <table style="border:solid">
     <tr>
-    	<th style="border:solid; border-width:1px">Id</th>
-        <th style="border:solid; border-width:1px">Nama</th>
-        <th style="border:solid; border-width:1px">Vehicle Number</th>
-	<th style="border:solid; border-width:1px">Vehicle Category Name</th>
-        <th style="border:solid; border-width:1px">Status</th>
-        <th style="border:solid; border-width:1px">Created</th>
+    	<th style="border:solid; border-width:1px"><?php echo $this->Paginator->sort('id','ID');?></th>
+        <th style="border:solid; border-width:1px"><?php echo $this->Paginator->sort('name','Nama');?></th>
+        <th style="border:solid; border-width:1px"><?php echo $this->Paginator->sort('vehicle_number','Vehicle Number');?></th>
+	<th style="border:solid; border-width:1px"><?php echo $this->Paginator->sort('VehicleCategory','Vehicle Category Name');?></th>
+        <th style="border:solid; border-width:1px"><?php echo $this->Paginator->sort('status','Status');?></th>
+        <th style="border:solid; border-width:1px"><?php echo $this->Paginator->sort('created','Created');?></th>
         <th style="border:solid; border-width:1px">Action</th>
     </tr>
     <?php foreach($customers as $customer): ?>
@@ -36,3 +36,12 @@
     <?php unset ($customer); ?>
 </table>
 </fieldset>
+<?php
+    echo $this->Paginator->prev(
+        '  Prev ', array(), null, array('class' => 'prev disabled')
+    );
+    echo $this->Paginator->numbers(array('separator' => ' '));
+    echo $this->Paginator->next(
+        ' Next ', array(), null, array('class' => 'next disabled')
+    );
+?>

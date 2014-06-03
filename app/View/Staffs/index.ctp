@@ -6,12 +6,12 @@
 ?>
 <table>
     <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Mobile Phone</th>
-        <th>Status</th>
-        <th>Created</th>
+        <th><?php echo $this->Paginator->sort('id','ID');?></th>
+        <th><?php echo $this->Paginator->sort('name','Nama');?></th>
+        <th><?php echo $this->Paginator->sort('address','Address');?></th>
+        <th><?php echo $this->Paginator->sort('mobile_phone','Mobile Phone');?></th>
+        <th><?php echo $this->Paginator->sort('status','Status');?></th>
+        <th><?php echo $this->Paginator->sort('created','Created');?></th>
         <th>Action</th>
     </tr>
     <?php foreach($staffs as $staff): ?>
@@ -42,3 +42,12 @@
     <?php endforeach; ?>
     <?php unset ($staff); ?>
 </table>
+<?php
+    echo $this->Paginator->prev(
+        '  Prev ', array(), null, array('class' => 'prev disabled')
+    );
+    echo $this->Paginator->numbers(array('separator' => ' '));
+    echo $this->Paginator->next(
+        ' Next ', array(), null, array('class' => 'next disabled')
+    );
+?>
