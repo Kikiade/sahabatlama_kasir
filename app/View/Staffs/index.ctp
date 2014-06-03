@@ -1,8 +1,5 @@
 <?php
-    echo $this->Html->link(
-        'Add Staff',
-        array('controller' => 'staff', 'action' , 'add')
-    );
+   echo $this->Html->link('Add Staff', array('cotroller' => 'staffs', 'action' => 'add'));
 ?>
 <table>
     <tr>
