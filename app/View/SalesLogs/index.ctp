@@ -22,8 +22,6 @@
 <td><?php echo $saleslog['SalesLog']['transaction_time'] ?></td>
 <td>
 	<?php echo $this->Html->link('View', array('action' => 'view', $saleslog['SalesLog']['id'])); ?>
-	<?php echo $this->Html->link('Edit', array('action' => 'edit', $saleslog['SalesLog']['id'])); ?>
-	<?php echo $this->Html->link('Delete', array('action' => 'view', $saleslog['SalesLog']['id'])); ?>
 </td>
 </tr>
 </table>

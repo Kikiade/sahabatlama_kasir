@@ -6,7 +6,7 @@
 
         function beforeFilter(){
             parent::beforeFilter();
-            $this->Auth->allow('add', 'logout','index','edit','delete','view');
+            $this->Auth->allow('add', 'logout','index','edit','delete','view', 'add');
         }
 
         function index(){
