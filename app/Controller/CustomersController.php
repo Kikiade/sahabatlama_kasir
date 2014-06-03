@@ -26,6 +26,12 @@
 
 		public function add()
 		{
+			$this->set('vehicle_categories', $this->Customer->VehicleCategory->find(
+            'list',
+            array(
+                'order' => array('VehicleCategory.id')
+            )));
+
 			if($this->request->is('post')){
 				$this->Customer->create();
 				 if($this->Customer->save($this->request->data)){
@@ -48,6 +54,12 @@
 		}
 
 		public function edit($id = null){
+			$this->set('vehicle_categories', $this->Customer->VehicleCategory->find(
+            'list',
+            array(
+                'order' => array('VehicleCategory.id')
+            )));
+
 			if(!$id){
 				throw new NotFoundException(__('Invalid Customer'));
 			}

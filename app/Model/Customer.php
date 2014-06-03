@@ -12,7 +12,11 @@
 				'rule' => 'NotEmpty'
 				),
 				'vehicle_number' => array(
-					'rule' => 'NotEmpty')
-			);
+					'rule' => 'NotEmpty'
+				),
+				'vehicle_category_id' => array(
+                 'rule' => 'NotEmpty'
+            )
+		);
 	}
 ?>
