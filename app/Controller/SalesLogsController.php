@@ -9,12 +9,12 @@
 		}
 		function index(){
 			$this->set('sales_logs', $this->SalesLog->find('all'));
-			$data	=	$this->SalesLog->find("all",array(
+			/*$data	=	$this->SalesLog->find("all",array(
 						"conditions"	=>	array(
 							"SalesLog.id"	=>	"1"
 						)
 					));
-			pr($data);
+			pr($data);*/
 			
 			//paging page
 			$this->paginate = array(

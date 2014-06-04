@@ -11,10 +11,10 @@
 		public function index()
 		{
 			$customers = $this->Customer->find('all');
-			$this->set('customers', $customers);
+			/*$this->set('customers', $customers);
 
 			$data = $this->Customer->find('all', array("conditions" => array("Customer.id" => "1")));
-			pr ($data);
+			pr ($data);*/
 			
 			//paging page
 			$this->paginate = array(

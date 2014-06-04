@@ -11,12 +11,16 @@
 			$categories = $this->VehicleCategory->find('all');
 			$this->set('vehicle_categories', $categories);
 			
-			$data	=	$this->VehicleCategory->find("all",array(
+			/*$data	=	$this->VehicleCategory->find("all",array(
 						"conditions"	=>	array(
 							"VehicleCategory.id"	=>	"1"
 						)
 					));
+<<<<<<< HEAD
 			//pr($data);
+=======
+			pr($data);*/
+>>>>>>> dfa3f424d187e4204e93235449371724f43bd9d0
 			
 			//paging page
 			$this->paginate = array(
