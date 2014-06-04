@@ -17,6 +17,9 @@
             ),
             'status' => array(
                 'rule' => 'notEmpty'
+            ),
+            'vehicle_category_id' => array(
+                'rule' => 'notEmpty'
             )
         );
     }
