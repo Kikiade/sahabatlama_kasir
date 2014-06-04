@@ -15,7 +15,7 @@
 							"VehicleCategoryCost.id"	=>	"1"
 						)
 					));
-			pr($data);
+			//pr($data);
             //Paging page            
             $this->paginate = array(
                 'limit' => 2
@@ -33,13 +33,7 @@
             }
              $this->set('post', $vehicle_category_costs);
         }    
-        function add(){
-            $this->set('vehicle_categories', $this->VehicleCategoryCost->VehicleCategory->find(
-            'list',
-            array(
-                'order' => array('VehicleCategory.id')
-            )));
-            
+        function add(){    
             if($this->request->is('post')){
                 $this->VehicleCategoryCost->Create();
                 if($this->VehicleCategoryCost->save($this->request->data)){
@@ -48,16 +42,9 @@
                 }
                 $this->Session->setFlash(__('Unable to add your Vahicle Category Cost'));
             }
-
-
-
         }
         function edit($id = null){
-            $this->set('vehicle_categories', $this->VehicleCategoryCost->VehicleCategory->find(
-            'list',
-            array(
-                'order' => array('VehicleCategory.id')
-            )));
+
             /*
             if($id){
                 throw new NotFoundException(__('Invalid Vehicle Category Cost'));

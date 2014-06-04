@@ -2,8 +2,11 @@
     class UsersController extends AppController{
         var $name = 'Users';
         var $helpers = array('Html','Form');
-        
-        
+        /*
+        function view_active(){
+            $this->set('vehicle_category_costs', '$vehicle_category_costs');    
+        }
+        */
         function beforeFilter(){
             parent::beforeFilter();
             $this->Auth->allow('add', 'logout');

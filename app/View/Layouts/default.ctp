@@ -1,62 +1,40 @@
-<?php
-/**
- *
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->Session->flash('auth');?>
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
+<title><?php echo $this->fetch('title'); ?></title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- Include external files and scripts here (See HTML helper for more info.) -->
 
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
+<?php
+echo $this->Html->css('main');
+echo $this->fetch('meta');
+echo $this->fetch('css');
+echo $this->fetch('script');
+?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+<!-- If you'd like some sort of menu to
+show up on all of your views, include it here -->
+<div id="header">
+    <li><a href="<?php echo $this->webroot ?>Home" title=""><img src="<?php echo $this->webroot ?>img/icons/light/home.png" alt="" />Dashboard</a></li>
+    <li><a href="sl_kasir/staff" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />User</a></li>
+    <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Staff</a></li>
+    <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Customer</a></li>
+    <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Vehicle</a>
+        <ul>
+		<li><?php echo $this->Html->link("Vehicle Category", array("controller" => 'VehicleCategories', 'action' => 'Index')); ?></li>
+                <li class="last"><?php echo $this->Html->link("Vehicle Category Costs", array("controller" => 'VehicleCategoryCosts', 'action' => 'index')); ?></li>
+	</ul>
+   </li>
+    <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Sales Log</a></li>
+</div>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+<!-- Here's where I want my views to be displayed -->
+<?php echo $this->fetch('content'); ?>
+
+<!-- Add a footer to each displayed page -->
+<div id="footer"><a href="http://www.coda-technology.com" title="http://www.coda-technology.com">Coda Technology</a> </div>
+
 </body>
 </html>
