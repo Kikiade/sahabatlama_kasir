@@ -6,7 +6,9 @@
 <!-- Include external files and scripts here (See HTML helper for more info.) -->
 
 <?php
+//link CSS
 echo $this->Html->css('main');
+
 echo $this->fetch('meta');
 echo $this->fetch('css');
 echo $this->fetch('script');
@@ -18,7 +20,7 @@ echo $this->fetch('script');
 show up on all of your views, include it here -->
 <div id="header">
     <li><a href="<?php echo $this->webroot ?>Home" title=""><img src="<?php echo $this->webroot ?>img/icons/light/home.png" alt="" />Dashboard</a></li>
-    <li><a href="sl_kasir/staff" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />User</a></li>
+    <li><a href="f" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />User</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Staff</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Customer</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Vehicle</a>

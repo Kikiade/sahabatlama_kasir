@@ -16,7 +16,7 @@
 							"VehicleCategory.id"	=>	"1"
 						)
 					));
-			pr($data);
+			//pr($data);
 			
 			//paging page
 			$this->paginate = array(
