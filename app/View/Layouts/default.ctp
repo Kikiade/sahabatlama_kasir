@@ -22,11 +22,11 @@ show up on all of your views, include it here -->
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Staff</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Customer</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Vehicle</a>
-                    <ul>
-                        <li><?php echo $this->Html->link("Vehicle Category", array("controller" => 'VehicleCategories', 'action' => 'Index')); ?></li>
-                        <li class="last"><?php echo $this->Html->link("Vehicle Category Costs", array("controller" => 'VehicleCategoryCosts', 'action' => 'index')); ?></li>
-                    </ul>
-                </li>
+        <ul>
+		<li><?php echo $this->Html->link("Vehicle Category", array("controller" => 'VehicleCategories', 'action' => 'Index')); ?></li>
+                <li class="last"><?php echo $this->Html->link("Vehicle Category Costs", array("controller" => 'VehicleCategoryCosts', 'action' => 'index')); ?></li>
+	</ul>
+   </li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Sales Log</a></li>
 </div>
 
