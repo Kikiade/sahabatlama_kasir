@@ -15,7 +15,7 @@
 							"VehicleCategoryCost.id"	=>	"1"
 						)
 					));
-			pr($data);
+			//pr($data);
             //Paging page            
             $this->paginate = array(
                 'limit' => 2

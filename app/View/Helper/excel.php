@@ -26,7 +26,15 @@
         }
         
         function addRow(){
-            
+            fputcsv($this->buffer, $row, $this->delimiter, $this->enclouser);
         }
+        
+        function renderHeaders(){
+            header('Content-Type: text/csv');
+            header("Content-type:application/vnd.ms-excel");
+            header("Content-disposition:attachment;filename=".$this->filename);
+        }
+        
+        
     }
 ?>
