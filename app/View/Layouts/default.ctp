@@ -15,12 +15,38 @@ echo $this->fetch('script');
 ?>
 </head>
 <body>
+	
+<div id="leftSide">
+    <div class="logo"><a><img src="<?php echo $this->webroot ?>img/logo_.png" alt="" width="100" /></a></div>
+    <div class="sidebarSep mt0"></div>
+</div>
+<div id="rightSide">
 
+    <!-- Top fixed navigation -->
+    <div class="topNav">
+        <div class="wrapper">
+            <div class="welcome"><a href="#" title=""><img src="<?php echo $this->webroot ?>img/userPic.png" alt="" /></a><span></span></div>
+            <div class="userNav">
+                <ul>
+                    <li><a href=""><img src="<?php echo $this->webroot ?>img/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="resp">
+        <div class="respHead">
+            <a href="<?php echo $settings["cms_url"]?>" title=""><img src="<?php echo $this->webroot ?>img/loginLogo.png" alt="" /></a>
+        </div>
+        
+        <div class="cLine"></div>
+        <div class="smalldd">
+            <span class="goTo"><img src="<?php echo $this->webroot ?>img/icons/light/home.png" alt="" />Dashboard</span>
+            <ul class="smallDropdown">
 <!-- If you'd like some sort of menu to
 show up on all of your views, include it here -->
 <div id="header">
     <li><a href="<?php echo $this->webroot ?>Home" title=""><img src="<?php echo $this->webroot ?>img/icons/light/home.png" alt="" />Dashboard</a></li>
-    <li><a href="f" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />User</a></li>
+    <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />User</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Staff</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Customer</a></li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Vehicle</a>
@@ -30,6 +56,9 @@ show up on all of your views, include it here -->
 	</ul>
    </li>
     <li><a href="#" title="" class="exp"><img src="<?php echo $this->webroot ?>img/icons/light/pencil.png" alt="" />Sales Log</a></li>
+</div>
+</div>
+</div>
 </div>
 
 <!-- Here's where I want my views to be displayed -->
