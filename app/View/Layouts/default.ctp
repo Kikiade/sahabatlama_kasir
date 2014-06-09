@@ -4,7 +4,6 @@
 <title><?php echo $this->fetch('title'); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo $this->webroot; ?>css/main.css">
 <!-- Include external files and scripts here (See HTML helper for more info.) -->
-
 <?php
 //link CSS
 echo $this->Html->css('main');
@@ -13,20 +12,20 @@ echo $this->fetch('css');
 echo $this->fetch('script');
 ?>
 </head>
-<body>            
 
+<body>   
+         
 <!-- Left Content -->
- <div id="leftSide">
-    <div class="logo"><a href="index.html"><img src="<?php echo $this->webroot; ?>img/log-o.png" alt="" /></a></div>
+<div id="leftSide">
+    <div class="logo"><a href="index.html"><img src="<?php echo $this->webroot; ?>img/logo.png" alt="" /></a></div>
     
-    <div class="sidebarSep mt0"></div>
-    
+    <div class="sidebarSep"></div>
+        
 <!-- Left navigation -->
    <ul id="menu" class="nav">
         <li class="dash"><a href="#" title="" class="active"><span>Dashboard</span></a></li>
         <li class="charts"><a href="#" title=""><span>Vehicle</span></a></li>
-        <li class="ui"><a href="#" title="" class="exp"><span>Customers</span></a>
-        </li>
+        <li class="ui"><a href="#" title="" class="exp"><span>Customers</span></a></li>
         <li class="ui"><a href="#" title="" class="exp"><span>Admin</span><strong>3</strong></a>
             <ul class="sub">
                 <li><a href="#" title="">Add new Admin</a></li>
@@ -47,7 +46,7 @@ echo $this->fetch('script');
             <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy, Putra!</span></div>
             <div class="userNav">
                 <ul>
-                    <li class="dd"><a title=""><img src="images/icons/topnav/messages.png" alt="" /><span>Messages</span><span class="numberTop">8</span></a>
+                    <li class="dd"><a title=""><img src="images/icons/topnav/messages.png" alt=""/><span>Messages</span><span class="numberTop">8		                     </span></a>
                         <ul class="userDropdown">
                             <li><a href="#" title="" class="sAdd">new message</a></li>
                             <li><a href="#" title="" class="sInbox">inbox</a></li>
@@ -61,6 +60,7 @@ echo $this->fetch('script');
             </div>
         </div>
     </div>
+ </div>
 
 <!-- Responsive header -->
  <!--   <div class="resp">
@@ -118,15 +118,12 @@ echo $this->fetch('script');
         </div>
         <div class="cLine"></div>
     </div> -->
-</div>
-</div>
-</div>
 
 <!-- Here's where I want my views to be displayed -->
 <?php echo $this->fetch('content'); ?>
 
 <!-- Add a footer to each displayed page -->
-<div id="footer"><div class="wrapper"><a href="http://www.coda-technology.com" title="http://www.coda-technology.com">Coda Technology</a> </div>
+  <div id="footer"><div class="wrapper"><a href="http://www.coda-technology.com" title="http://www.coda-technology.com">Coda Technology</a></div>
 </div>
 </body>
 </html>
