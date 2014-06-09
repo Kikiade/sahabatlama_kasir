@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="<?php echo $this->webroot; ?>css/main.css" />
-<body>
-<div id="rightSide">
+
+
+
 <div class="line"></div>
  
 <!-- Main content wrapper -->
@@ -57,5 +57,3 @@
             );
         ?>
    </div>
-</div>
-</body>

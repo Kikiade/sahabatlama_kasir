@@ -5,16 +5,14 @@
 		
 		public function beforeFilter()
 		{
+			parent::beforeFilter();
 			$this->Auth->allow('index', 'view', 'add', 'edit', 'delete');
 		}
 		
 		public function index()
 		{
-			$customers = $this->Customer->find('all');
-			/*$this->set('customers', $customers);
-
-			$data = $this->Customer->find('all', array("conditions" => array("Customer.id" => "1")));
-			pr ($data);*/
+			Configure::write('debug', 2);
+			//pr ($data);
 			
 			//paging page
 			$this->paginate = array(
@@ -91,4 +89,4 @@
 		}
 	}
 
-?>-
+?>

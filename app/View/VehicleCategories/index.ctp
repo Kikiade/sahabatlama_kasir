@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo $this->webroot; ?>css/main.css" />
+
 <div id="rightSide">
 <div class="line"></div>
     
@@ -42,7 +42,7 @@
                 	<?php endforeach; ?>
                 	<?php unset ($categories); ?>
             </table>
-            </div>
+        </div>
             
             	<?php
                 	echo $this->Paginator->prev(
