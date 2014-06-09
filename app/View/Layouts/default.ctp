@@ -13,8 +13,7 @@ echo $this->fetch('script');
 ?>
 </head>
 
-<body>   
-         
+<body>
 <!-- Left Content -->
 <div id="leftSide">
     <div class="logo"><a href="index.html"><img src="<?php echo $this->webroot; ?>img/logo.png" alt="" /></a></div>
@@ -60,7 +59,42 @@ echo $this->fetch('script');
             </div>
         </div>
     </div>
- </div>
+    
+    <!-- Title area -->
+    <div class="titleArea">
+        <div class="wrapper">
+            <div class="pageTitle">
+                <h5>Dashboard</h5>
+                <span>Sahabat lama cuci management system</span>
+            </div>
+            <div class="middleNav">
+                <ul>
+                    <li class="mUser"><a title=""><span class="users"></span></a>
+                        <ul class="mSub1">
+                            <li><a href="#" title="">Add user</a></li>
+                            <li><a href="#" title="">Statistics</a></li>
+                            <li><a href="#" title="">Orders</a></li>
+                        </ul>
+                    </li>
+                    <li class="mMessages"><a title=""><span class="messages"></span></a>
+                        <ul class="mSub2">
+                            <li><a href="#" title="">New tickets<span class="numberRight">8</span></a></li>
+                            <li><a href="#" title="">Pending tickets<span class="numberRight">12</span></a></li>
+                            <li><a href="#" title="">Closed tickets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <?php echo $this->fetch('content'); ?>
+    
+    <!-- Add a footer to each displayed page -->
+  <div id="footer"><div class="wrapper"><a href="http://www.coda-technology.com" title="http://www.coda-technology.com">Coda Technology</a></div>
+	</div>
+    
+</div>
 
 <!-- Responsive header -->
  <!--   <div class="resp">
@@ -120,10 +154,8 @@ echo $this->fetch('script');
     </div> -->
 
 <!-- Here's where I want my views to be displayed -->
-<?php echo $this->fetch('content'); ?>
 
-<!-- Add a footer to each displayed page -->
-  <div id="footer"><div class="wrapper"><a href="http://www.coda-technology.com" title="http://www.coda-technology.com">Coda Technology</a></div>
-</div>
+
+
 </body>
 </html>
