@@ -33,7 +33,12 @@
             }
              $this->set('post', $vehicle_category_costs);
         }    
-        function add(){    
+        function add(){
+			$this->set('vehicle_categories', $this->VehicleCategoryCost->VehicleCategory->find(
+            'list',
+            array(
+                'order' => array('VehicleCategory.id')
+            )));    
             if($this->request->is('post')){
                 $this->VehicleCategoryCost->Create();
                 if($this->VehicleCategoryCost->save($this->request->data)){

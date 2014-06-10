@@ -5,7 +5,7 @@
    <br />
     <h1>View</h1>
       
-      <!-- Larger buttons -->
+      <!-- View -->
             <div class="widget">
                 <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/preview.png" alt="" class="titleIcon" />
                 <h6>View Vehicle Category</h6></div>
