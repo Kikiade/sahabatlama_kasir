@@ -5,8 +5,7 @@
     
         
         <!-- Form -->
-        <form action="add.ctp" class="form">
-        <?php echo $this->Form->Create ('Customer', array('url' => 'Customers/add', 'class' => 'form'));?>
+        <?php echo $this->Form->create('Customer', array('url' => '/Customers/add', 'class' => 'form'));?>
             <fieldset>
                 <div class="widget">
        			 <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/list.png" alt="" class="titleIcon" /><h6>Add New Customers</h6></div>
@@ -60,5 +59,5 @@
 	                    <input class="redB" value="Save" type="submit" />
 				</div>
             </fieldset>
-        </form>
     </div>
+ </div>   

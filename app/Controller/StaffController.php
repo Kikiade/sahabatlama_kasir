@@ -12,6 +12,8 @@
         function index(){
             $this->set('staffs', $this->Staff->find('all'));
             
+            Configure::write('debug', 2);
+            
             //paging page
 	    $this->paginate = array(
 		'limit' => 2
@@ -33,6 +35,8 @@
         function add(){
             //post get put
             if($this->request->is('post')){
+                Configure::write('debug', 2);
+				pr($this->request->data);
                 $this->Staff->Create();
                 if($this->Staff->save($this->request->data)){
                     $this->Session->setFlash(__('Your staff has been saved'));

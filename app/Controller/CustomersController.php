@@ -31,6 +31,8 @@
             )));
 
 			if($this->request->is('post')){
+				Configure::write('debug', 2);
+				pr($this->request->data);
 				$this->Customer->create();
 				 if($this->Customer->save($this->request->data)){
 					$this->Session->setFlash(__('Your new customers has been saved'));
