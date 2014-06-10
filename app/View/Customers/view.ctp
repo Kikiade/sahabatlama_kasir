@@ -22,9 +22,10 @@
                   <div class="formRight"><label><?php echo $post['Customer']['created'] ?></label></div>
                 </div>
             </div>
-             <div class="widget content" style="">
+            <div class="widget content" style="">
               <div class="body textC">
                 <a href="http://localhost/sl_kasir/customers/index" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
+                <a href="http://localhost/sl_kasir/customers/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
               </div>
            </div>
 </div>
