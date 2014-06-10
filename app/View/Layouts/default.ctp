@@ -23,16 +23,16 @@ echo $this->fetch('script');
 <!-- Left navigation -->
    <ul id="menu" class="nav">
         <li class="dash"><a href="#" title="" class="active"><span>Dashboard</span></a></li>
-        <li class="charts"><a href="#" title=""><span>Vehicle</span></a></li>
-        <li class="ui"><a href="#" title="" class="exp"><span>Customers</span></a></li>
-        <li class="ui"><a href="#" title="" class="exp"><span>Admin</span><strong>3</strong></a>
+        <li class="ui"><a href="#" title=""><span>User</span></a></li>
+        <li class="ui"><a href="#" title="" class="exp"><span>Staff</span></a></li>
+        <li class="ui"><a href="#" title="" class="exp"><span>Customer</span></a></li>
+        <li class="ui"><a href="#" title="" class="exp"><span>Vehicle</span><strong>2</strong></a>
             <ul class="sub">
-                <li><a href="#" title="">Add new Admin</a></li>
-                <li><a href="#" title="">List</a></li>
-                <li><a href="#" title="">Report</a></li>
+                <li><a href="#" title="">Vehicle Category</a></li>
+                <li><a href="#" title="">Vehicle Category Cost</a></li>
             </ul>
         </li>
-        <li class="ui"><a href="#" title=""><span>Venue</span></a></li>
+        <li class="ui"><a href="#" title=""><span>Sales Log</span></a></li>
     </ul>
 </div>
 
@@ -42,18 +42,9 @@ echo $this->fetch('script');
 <!-- Top fixed navigation -->
     <div class="topNav">
         <div class="wrapper">
-            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy, Putra!</span></div>
+            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy!</span></div>
             <div class="userNav">
                 <ul>
-                    <li class="dd"><a title=""><img src="images/icons/topnav/messages.png" alt=""/><span>Messages</span><span class="numberTop">8		                     </span></a>
-                        <ul class="userDropdown">
-                            <li><a href="#" title="" class="sAdd">new message</a></li>
-                            <li><a href="#" title="" class="sInbox">inbox</a></li>
-                            <li><a href="#" title="" class="sOutbox">outbox</a></li>
-                            <li><a href="#" title="" class="sTrash">trash</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
                     <li><a href="login.html" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
                 </ul>
             </div>
@@ -72,15 +63,6 @@ echo $this->fetch('script');
                     <li class="mUser"><a title=""><span class="users"></span></a>
                         <ul class="mSub1">
                             <li><a href="#" title="">Add user</a></li>
-                            <li><a href="#" title="">Statistics</a></li>
-                            <li><a href="#" title="">Orders</a></li>
-                        </ul>
-                    </li>
-                    <li class="mMessages"><a title=""><span class="messages"></span></a>
-                        <ul class="mSub2">
-                            <li><a href="#" title="">New tickets<span class="numberRight">8</span></a></li>
-                            <li><a href="#" title="">Pending tickets<span class="numberRight">12</span></a></li>
-                            <li><a href="#" title="">Closed tickets</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -154,8 +136,5 @@ echo $this->fetch('script');
     </div> -->
 
 <!-- Here's where I want my views to be displayed -->
-
-
-
 </body>
 </html>

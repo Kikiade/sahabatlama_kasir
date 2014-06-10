@@ -1,17 +1,13 @@
-
-
-
 <div class="line"></div>
  
 <!-- Main content wrapper -->
  <div class="wrapper">
    <br />
      <h1>Customers</h1>
-        <?php echo $this->Html->link('Add Customers', array('cotroller' => 'customers', 'action' => 'add'));?>
         
-      <!-- Dynamic table -->
+      <!-- Customers -->
        <div class="widget">
-        <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Dynamic table</h6></div>
+        <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Customers</h6></div>
         <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
         <thead>
             <tr>
