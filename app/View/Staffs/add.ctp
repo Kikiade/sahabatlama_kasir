@@ -5,7 +5,7 @@
     
         
         <!-- Form -->
-        <?php echo $this->Form->create('Staff', array('url' => '/Staffs/add', 'class' => 'form'));?>
+        <?php echo $this->Form->create('Staff', array('url' => '/Staff/add', 'class' => 'form'));?>
             <fieldset>
                 <div class="widget">
        			 <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/list.png" alt="" class="titleIcon" /><h6>Add New Staffs </h6>

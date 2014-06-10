@@ -16,16 +16,16 @@ echo $this->fetch('script');
 <body>
 <!-- Left Content -->
 <div id="leftSide">
-    <div class="logo"><a href="index.html"><img src="<?php echo $this->webroot; ?>img/logo.png" alt="" /></a></div>
+    <div class="logo"><a href="index.html"><img src="<?php echo $this->webroot; ?>img/sahabat.png" alt="" /></a></div>
     
     <div class="sidebarSep"></div>
         
 <!-- Left navigation -->
    <ul id="menu" class="nav">
-        <li class="dash"><a href="#" title="" class="active"><span>Dashboard</span></a></li>
+        <li class="dash"><a href="" title="" class="active"><span>Dashboard</span></a></li>
         <li class="ui"><a href="#" title=""><span>User</span></a></li>
-        <li class="ui"><a href="#" title="" class="exp"><span>Staff</span></a></li>
-        <li class="ui"><a href="#" title="" class="exp"><span>Customer</span></a></li>
+        <li class="ui"><a href="http://localhost/sl_kasir/staff" title="" class="exp"><span>Staff</span></a></li>
+        <li class="ui"><a href="http://localhost/sl_kasir/Customers" title="" class="exp"><span>Customer</span></a></li>
         <li class="ui"><a href="#" title="" class="exp"><span>Vehicle</span><strong>2</strong></a>
             <ul class="sub">
                 <li><a href="#" title="">Vehicle Category</a></li>
