@@ -1,5 +1,5 @@
 <?php
-    class StaffController extends AppController{
+    class StaffsController extends AppController{
         var $name = 'Staffs';
         var $helpers = array('Html', 'Form', 'Session', 'Paginator');
         var $components = array('Session');

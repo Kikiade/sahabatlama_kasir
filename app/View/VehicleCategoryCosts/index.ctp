@@ -11,13 +11,13 @@
             <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
              <thead>
                 <tr>
-                    <th><?php echo $this->Paginator->sort('id','ID');?></th>
-                    <th><?php echo $this->Paginator->sort('name','Name');?></th>
-                    <th><?php echo $this->Paginator->sort('cost', 'Costs');?></th>
-                    <th><?php echo $this->Paginator->sort('VehicleCategory', 'Vehicle Category Name');?></th>
-                    <th><?php echo $this->Paginator->sort('status', 'Status');?></th>
-                    <th><?php echo $this->Paginator->sort('created', 'Created');?></th>
-                    <th>Action</th>
+                    <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('name','Name');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('cost', 'Costs');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('VehicleCategory', 'Vehicle Category Name');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('status', 'Status');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('created', 'Created');?></center></td>
+                    <td><center>Action</center></td>
                 </tr>
               </thead>  
                 <?php foreach ($vehicle_category_costs as $vehiclecategorycost): ?>

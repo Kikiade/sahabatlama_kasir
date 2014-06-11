@@ -11,13 +11,13 @@
          <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
          <thead>
                 <tr>
-                    <th><?php echo $this->Paginator->sort('id','ID');?></th>
-                    <th><?php echo $this->Paginator->sort('name','Nama');?></th>
-                    <th><?php echo $this->Paginator->sort('address','Address');?></th>
-                    <th><?php echo $this->Paginator->sort('mobile_phone','Mobile Phone');?></th>
-                    <th><?php echo $this->Paginator->sort('status','Status');?></th>
-                    <th><?php echo $this->Paginator->sort('created','Created');?></th>
-                    <th>Action</th>
+                    <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('name','Nama');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('address','Address');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('mobile_phone','Mobile Phone');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('status','Status');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('created','Created');?></center></td>
+                    <td><center>Action</center></td>
                 </tr>
           </thead>       
                 <?php foreach($staffs as $staff): ?>
@@ -33,18 +33,14 @@
                         <?php
                             echo $this->Html->link('View', array('action' => 'view', $staff['Staff']['id']));
                         ?>
-                    </td>
-                    <td>
                         <?php
                             echo $this->Html->link('Edit', array('action' => 'edit', $staff['Staff']['id']));
                         ?>
-                    </td>
-                    <td>
                         <?php
                             echo $this->Form->postlink('Delete', array('action' => 'delete', $staff['Staff']['id']),
                                                        array('confirm'=>'Are you sure'));
                         ?>
-                    </td>
+                    </td>    
                 </tr>
                 </tbody>
                 <?php endforeach; ?>

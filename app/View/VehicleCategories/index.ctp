@@ -7,16 +7,16 @@
 	<h1>Vehicle Categories</h1>
 
         <div class="widget">
-          <div class="title"><img src="<?php echo $this->webroot; ?>images/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Vehicle Categories		</h6></div>
+          <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Vehicle Categories		</h6></div>
             <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
              <thead>
                 <tr class="gradeA">
-                    <th><?php echo $this->Paginator->sort('id','ID');?></th>
-                    <th><?php echo $this->Paginator->sort('name','Name');?></th>
-                    <th><?php echo $this->Paginator->sort('price','Price');?></th>
-                	<th><?php echo $this->Paginator->sort('created','Created');?></th>
-                    <th><?php echo $this->Paginator->sort('status','Status');?></th>
-                    <th>Action</th>
+                    <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('name','Name');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('price','Price');?></center></td>
+                	<td><center><?php echo $this->Paginator->sort('created','Created');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('status','Status');?></center></td>
+                    <td><center>Action</center></td>
                 </tr>
              </thead>
                 	<?php foreach($vehicle_categories as $categories): ?>
