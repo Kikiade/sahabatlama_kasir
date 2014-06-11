@@ -47,7 +47,15 @@
                         <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['name']; ?></td>
                         <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['cost']; ?></td>
                         <td><?php echo $vehiclecategorycost ['VehicleCategory']['name']; ?></td>
-                        <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['status']; ?></td>
+                        <td><?php if($vehiclecategorycost['VehicleCategoryCost']['status'] == 0)
+                                {
+                                    echo 'Not Active';
+                                }
+                                    else{
+                                        echo 'Active';
+                                } 
+                            ?>
+                        </td>
                         <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['created']; ?></td>
                         <td>
                             <?php

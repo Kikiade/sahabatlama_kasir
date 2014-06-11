@@ -54,7 +54,7 @@
 											0 => 'Not Active',
 											1 => 'Active'
 	                    				),
-	     			               		'selected' => 1
+	     			               		'selected' => 1, 
 					));
 				 ?>
                 <div class="formSubmit"> 
