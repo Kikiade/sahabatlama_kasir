@@ -47,7 +47,15 @@
                     <td><?php echo $staff['Staff']['name']; ?></td>
                     <td><?php echo $staff['Staff']['address']; ?></td>
                     <td><?php echo $staff['Staff']['mobile_phone']; ?></td>
-                    <td><?php echo $staff['Staff']['status']; ?></td>
+                    <td>
+                        <?php 
+                            if($staff['Staff']['status'] == 1){
+                                echo "Active";
+                            }else{
+                                echo "Not Active";
+                            }
+                        ?>
+                    </td>
                     <td><?php echo $staff['Staff']['created']; ?></td>
                     <td>
                         <?php

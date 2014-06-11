@@ -49,6 +49,11 @@
             }
         }
         function edit($id = null){
+            $this->set('vehicle_categories', $this->VehicleCategoryCost->VehicleCategory->find(
+            'list',
+            array(
+                'order' => array('VehicleCategory.id')
+            )));    
 
             /*
             if($id){

@@ -37,9 +37,7 @@
 						'between'		=> '<div class="formRight">',
 						'after' 		=> '</div>',
 						'empty'			=> "Select Vehicle Category Name",
-						'options' 		=> array( $vehicle_categories,
-											'empty' => 'Please Choose',
-											'velue' => $vehicle_categories
+						'options' 		=> array($vehicle_categories
 											)
 					));
 				 ?>   
