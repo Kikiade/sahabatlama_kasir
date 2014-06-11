@@ -24,15 +24,15 @@ echo $this->fetch('script');
    <ul id="menu" class="nav">
         <li class="dash"><a href="" title="" class="active"><span>Dashboard</span></a></li>
         <li class="ui"><a href="#" title=""><span>User</span></a></li>
-        <li class="ui"><a href="http://localhost/sl_kasir/staff" title="" class="exp"><span>Staff</span></a></li>
+        <li class="ui"><a href="http://localhost/sl_kasir/Staffs" title="" class="exp"><span>Staff</span></a></li>
         <li class="ui"><a href="http://localhost/sl_kasir/Customers" title="" class="exp"><span>Customer</span></a></li>
         <li class="ui"><a href="#" title="" class="exp"><span>Vehicle</span><strong>2</strong></a>
             <ul class="sub">
-                <li><a href="#" title="">Vehicle Category</a></li>
-                <li><a href="#" title="">Vehicle Category Cost</a></li>
+                <li><a href="http://localhost/sl_kasir/vehiclecategories" title="">Vehicle Category</a></li>
+                <li><a href="http://localhost/sl_kasir/VehicleCategoryCosts" title="">Vehicle Category Cost</a></li>
             </ul>
         </li>
-        <li class="ui"><a href="#" title=""><span>Sales Log</span></a></li>
+        <li class="ui"><a href="http://localhost/sl_kasir/saleslogs" title=""><span>Sales Log</span></a></li>
     </ul>
 </div>
 
