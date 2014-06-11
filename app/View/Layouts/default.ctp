@@ -51,8 +51,8 @@ echo $this->fetch('script');
         </div>
     </div>
     
-    <!-- Title area -->
-    <div class="titleArea">
+   <!-- Title area -->
+    <!--<div class="titleArea">
         <div class="wrapper">
             <div class="pageTitle">
                 <h5>Dashboard</h5>
@@ -68,7 +68,7 @@ echo $this->fetch('script');
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
     
     <?php echo $this->fetch('content'); ?>
     
