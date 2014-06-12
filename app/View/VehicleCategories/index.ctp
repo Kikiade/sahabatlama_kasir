@@ -43,6 +43,7 @@
                     		<td><?php echo $categories['VehicleCategory']['id']; ?></td>
                     		<td><?php echo $categories['VehicleCategory']['name']; ?></td>
                     		<td><?php echo $categories['VehicleCategory']['price']; ?></td>
+<<<<<<< HEAD
                 		<td><?php echo $categories['VehicleCategory']['created']; ?></td>
                     		<td>
 				    <?php
@@ -53,6 +54,18 @@
 					}
 				    ?>
 				</td>
+=======
+                			<td><?php echo $categories['VehicleCategory']['created']; ?></td>
+                    		<td><?php 
+                                    if($categories['VehicleCategory']['status'] == 1){
+                                            echo "Active";
+                                        }
+                                        else{
+                                            echo "Not Active";
+                                        }
+                                 ?>
+                            </td>
+>>>>>>> 090e7ede05e1f8eaa1d89a1f18dfac94d1b9803f
                     		<td>
                         		<?php echo $this->Html->link('View', array('controller' => 'vehicle_categories', 'action' => 'view', 
                             	$categories['VehicleCategory']['id'])); ?> 

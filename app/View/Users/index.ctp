@@ -16,7 +16,14 @@
         <td><?php echo $user['User']['id']; ?></td>
         <td><?php echo $user['User']['name']; ?></td>
         <td><?php echo $user['User']['username']; ?></td>
-        <td><?php echo $user['User']['status']; ?></td>
+        <td><?php 
+                    if($user['User']['status'] == 1){
+                                echo "Active";
+                            }else{
+                                echo "Not Active";
+                            }
+             ?>
+        </td>
         <td><?php echo $user['User']['created']; ?></td>
         <td><?php echo $this->Html->link('View', array('action' => 'view', $user['User']['id']));?></td>
         <td><?php echo $this->Html->link('Edit', array('action' => 'edit', $user['User']['id']));?></td>

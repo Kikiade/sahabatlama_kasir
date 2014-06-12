@@ -46,6 +46,7 @@
                 <td><?php echo $customer['Customer']['name']; ?></td>
                 <td><?php echo $customer['Customer']['vehicle_number']; ?></td>
                 <td><?php echo $customer['VehicleCategory']['name']; ?></td>
+<<<<<<< HEAD
                 <td>
 		    <?php
 			if($customer['Customer']['status'] == 0){
@@ -55,6 +56,17 @@
 			}
 		    ?>
 		</td>
+=======
+                <td><?php 
+                        if($customer['Customer']['status'] == 1){
+                                echo "Active";
+                        }
+                        else{
+                                echo "Not Active";
+                        }
+                    ?>
+                </td>
+>>>>>>> 090e7ede05e1f8eaa1d89a1f18dfac94d1b9803f
                 <td><?php echo $customer['Customer']['created']; ?></td>
                 <td>
                     <?php echo $this->Html->link('View', array('controller' => 'customers', 'action' => 'view', 
