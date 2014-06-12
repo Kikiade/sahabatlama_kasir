@@ -7,9 +7,8 @@
           </div>
            <div class="middleNav">
              <ul>
-               <li class="mUser"><a title=""><span class="users"></span></a>
+               <li class="mUser"><a href="http://localhost/sl_kasir/VehicleCategoryCosts/Add" title=""><span class="users"></span></a>
                 <ul class="mSub1">
-                  <li><a href="#" title="">Add user</a></li>
                  </ul>
                </li>
              </ul>
@@ -27,7 +26,7 @@
 	<h1>Vehicle Category Cost</h1>
 
         <div class="widget">
-          <div class="title"><img src="<?php echo $this->webroot; ?>images/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Vehicle Category Cost		</h6></div>
+          <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Vehicle Category Cost		</h6></div>
             <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
              <thead>
                 <tr>
@@ -47,13 +46,15 @@
                         <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['name']; ?></td>
                         <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['cost']; ?></td>
                         <td><?php echo $vehiclecategorycost ['VehicleCategory']['name']; ?></td>
-                        <td><?php if($vehiclecategorycost['VehicleCategoryCost']['status'] == 0)
-                                {
-                                    echo 'Not Active';
-                                }
-                                    else{
-                                        echo 'Active';
-                                } 
+                        <td>
+                            <?php
+                                if($vehiclecategorycost['VehicleCategoryCost']['status'] == 0)
+                                    {
+                                        echo 'Not Active';
+                                    }
+                                        else{
+                                            echo 'Active';
+                                    } 
                             ?>
                         </td>
                         <td><?php echo $vehiclecategorycost ['VehicleCategoryCost']['created']; ?></td>

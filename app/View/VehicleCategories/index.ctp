@@ -8,9 +8,8 @@
           </div>
            <div class="middleNav">
              <ul>
-               <li class="mUser"><a title=""><span class="users"></span></a>
+               <li class="mUser"><a href="http://localhost/sl_kasir/VehicleCategories/Add" title="Add"><span class="users"></span></a>
                 <ul class="mSub1">
-                  <li><a href="#" title="">Add user</a></li>
                  </ul>
                </li>
              </ul>
@@ -33,7 +32,7 @@
                     <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('name','Name');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('price','Price');?></center></td>
-                	<td><center><?php echo $this->Paginator->sort('created','Created');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('created','Created');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('status','Status');?></center></td>
                     <td><center>Action</center></td>
                 </tr>
@@ -44,8 +43,16 @@
                     		<td><?php echo $categories['VehicleCategory']['id']; ?></td>
                     		<td><?php echo $categories['VehicleCategory']['name']; ?></td>
                     		<td><?php echo $categories['VehicleCategory']['price']; ?></td>
-                			<td><?php echo $categories['VehicleCategory']['created']; ?></td>
-                    		<td><?php echo $categories['VehicleCategory']['status']; ?></td>
+                		<td><?php echo $categories['VehicleCategory']['created']; ?></td>
+                    		<td>
+				    <?php
+					if($categories['VehicleCategory']['status'] == 0){
+					    echo "Not Active";
+					}else{
+					    echo "Active";    
+					}
+				    ?>
+				</td>
                     		<td>
                         		<?php echo $this->Html->link('View', array('controller' => 'vehicle_categories', 'action' => 'view', 
                             	$categories['VehicleCategory']['id'])); ?> 

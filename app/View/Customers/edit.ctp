@@ -1,3 +1,21 @@
+<!-- Title area -->
+ <div class="titleArea">
+  <div class="wrapper">
+    <div class="pageTitle">
+      <h5>Edit Customers</h5>
+        <span>Sahabat lama cuci management system</span>
+          </div>
+           <div class="middleNav">
+             <ul>
+               <li class="mUser"><a href="http://localhost/sl_kasir/Customers" title="view"><span class="users"></span></a>
+                <ul class="mSub1">
+                  <li><a href="#" title="">Add user</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </div>
+   </div>
+ </div>
 <div class="line"></div>
 
 <!-- Main content wrapper -->

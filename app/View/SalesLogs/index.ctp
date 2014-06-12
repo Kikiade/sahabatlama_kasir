@@ -1,3 +1,21 @@
+<!-- Title area -->
+ <div class="titleArea">
+  <div class="wrapper">
+    <div class="pageTitle">
+      <h5>Dashboard</h5>
+        <span>Sahabat lama cuci management system</span>
+          </div>
+           <div class="middleNav">
+             <ul>
+               <li class="mUser"><a href="http://localhost/sl_kasir" title=""><span class="users"></span></a>
+                <ul class="mSub1">
+                 </ul>
+               </li>
+             </ul>
+           </div>
+   </div>
+ </div>
+ 
 <div class="line"></div>
  
 <!-- Main content wrapper -->
@@ -11,13 +29,13 @@
          <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
          <thead>
             <tr>
-                <th><?php echo $this->Paginator->sort('id','ID');?></th>
-                <th><?php echo $this->Paginator->sort('Staff','Staff');?></th>
-                <th><?php echo $this->Paginator->sort('VehicleCategory','Vehicle Category Name');?></th>
-                <th><?php echo $this->Paginator->sort('VehicleCategory','Price');?></th>
-                <th><?php echo $this->Paginator->sort('VehicleCategory','Nyuci Share');?></th>
-                <th><?php echo $this->Paginator->sort('transaction_time','Transaction Time');?></th>
-                <th>Action</th>
+                <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
+                <td><center><?php echo $this->Paginator->sort('Staff','Staff');?></center></td>
+                <td><center><?php echo $this->Paginator->sort('VehicleCategory','Vehicle Category Name');?></center></td>
+                <td><center><?php echo $this->Paginator->sort('VehicleCategory','Price');?></center></td>
+                <td><center><?php echo $this->Paginator->sort('VehicleCategory','Nyuci Share');?></center></td>
+                <td><center><?php echo $this->Paginator->sort('transaction_time','Transaction Time');?></center></td>
+                <td><center>Action</center></td>
             </tr>
          </thead>
         	<?php foreach ($sales_logs as $saleslog): ?>
@@ -31,7 +49,6 @@
                 <td><?php echo $saleslog['SalesLog']['transaction_time'] ?></td>
                 <td>
                     <?php echo $this->Html->link('View', array('action' => 'view', $saleslog['SalesLog']['id'])); ?>
-                    <?php echo $this->Html->link('Edit', array('action' => 'edit', $saleslog['SalesLog']['id'])); ?>
                     <?php echo $this->Html->link('Delete', array('action' => 'delete', $saleslog['SalesLog']['id'])); ?>
                 </td>
             </tr>
