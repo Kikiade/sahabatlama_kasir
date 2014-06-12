@@ -43,7 +43,7 @@
                     		<td><?php echo $categories['VehicleCategory']['id']; ?></td>
                     		<td><?php echo $categories['VehicleCategory']['name']; ?></td>
                     		<td><?php echo $categories['VehicleCategory']['price']; ?></td>
-<<<<<<< HEAD
+
                 		<td><?php echo $categories['VehicleCategory']['created']; ?></td>
                     		<td>
 				    <?php
@@ -54,7 +54,7 @@
 					}
 				    ?>
 				</td>
-=======
+
                 			<td><?php echo $categories['VehicleCategory']['created']; ?></td>
                     		<td><?php 
                                     if($categories['VehicleCategory']['status'] == 1){
@@ -65,7 +65,7 @@
                                         }
                                  ?>
                             </td>
->>>>>>> 090e7ede05e1f8eaa1d89a1f18dfac94d1b9803f
+
                     		<td>
                         		<?php echo $this->Html->link('View', array('controller' => 'vehicle_categories', 'action' => 'view', 
                             	$categories['VehicleCategory']['id'])); ?> 
@@ -80,13 +80,24 @@
                 	<?php unset ($categories); ?>
             </table>
         </div>
-        <?php
-            echo $this->Paginator->prev(
-                '  Prev ', array(), null, array('class' => 'prev disabled')
-            );
-            echo $this->Paginator->numbers(array('separator' => ' '));
-            echo $this->Paginator->next(
-                ' Next ', array(), null, array('class' => 'next disabled')
-            );
-        ?>
+         <div class="pagination">
+            <ul class="pages">
+                  <?php
+                        echo $this->Paginator->prev(__('<'), array(
+							'tag' => 'li',
+							'class' => 'prev disabled'
+						));
+                        echo $this->Paginator->numbers(array(
+															  'separator' => ' ',
+															  'tag' => 'li',
+															  'currentClass' => 'active',
+                      ));
+                        echo $this->Paginator->next(__('>'), array(
+							'tag' => 'li',
+							'class' => 'next disabled'
+						)
+                      );
+                  ?>
+               </ul>
+           </div>
 </div>

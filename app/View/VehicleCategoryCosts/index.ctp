@@ -75,19 +75,24 @@
                  <?php unset($vehiclecategorycost);?>
             </table>
             </div>
+              <div class="pagination">
+            	<ul class="pages">
                   <?php
-                        echo $this->Paginator->prev(
-                            'Prev', array(), null, array('class' => 'off', 'div' => 'pagination', 'between' => '<ul class="pages"', 'after' => '</div>')
-                      );
+                        echo $this->Paginator->prev(__('<'), array(
+							'tag' => 'li',
+							'class' => 'prev disabled'
+						));
                         echo $this->Paginator->numbers(array(
-                                                              'before' => '<div class="pagination"><ul class="pages">',
-                                                              'separator' => ' ',
-                                                              'currentClass' => 'active',
-                                                              'tag' => 'li',
-                                                              'after' => '</ul></div>'
+															  'separator' => ' ',
+															  'tag' => 'li',
+															  'currentClass' => 'active',
                       ));
-                        echo $this->Paginator->next(
-                            'Next', array(), null, array('class' => 'next disabled')
+                        echo $this->Paginator->next(__('>'), array(
+							'tag' => 'li',
+							'class' => 'next disabled'
+						)
                       );
                   ?>
+               </ul>
+           </div>
 	</div>		

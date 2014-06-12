@@ -46,7 +46,7 @@
                 <td><?php echo $customer['Customer']['name']; ?></td>
                 <td><?php echo $customer['Customer']['vehicle_number']; ?></td>
                 <td><?php echo $customer['VehicleCategory']['name']; ?></td>
-<<<<<<< HEAD
+
                 <td>
 		    <?php
 			if($customer['Customer']['status'] == 0){
@@ -56,7 +56,7 @@
 			}
 		    ?>
 		</td>
-=======
+
                 <td><?php 
                         if($customer['Customer']['status'] == 1){
                                 echo "Active";
@@ -66,7 +66,7 @@
                         }
                     ?>
                 </td>
->>>>>>> 090e7ede05e1f8eaa1d89a1f18dfac94d1b9803f
+
                 <td><?php echo $customer['Customer']['created']; ?></td>
                 <td>
                     <?php echo $this->Html->link('View', array('controller' => 'customers', 'action' => 'view', 
@@ -82,13 +82,24 @@
             <?php unset ($customer); ?>
         </table>
      </div>
-        <?php
-            echo $this->Paginator->prev(
-                '  Prev ', array(), null, array('class' => 'prev disabled')
-            );
-            echo $this->Paginator->numbers(array('separator' => ' '));
-            echo $this->Paginator->next(
-                ' Next ', array(), null, array('class' => 'next disabled')
-            );
-        ?>
+         <div class="pagination">
+            <ul class="pages">
+                  <?php
+                        echo $this->Paginator->prev(__('<'), array(
+							'tag' => 'li',
+							'class' => 'prev disabled'
+						));
+                        echo $this->Paginator->numbers(array(
+															  'separator' => ' ',
+															  'tag' => 'li',
+															  'currentClass' => 'active',
+                      ));
+                        echo $this->Paginator->next(__('>'), array(
+							'tag' => 'li',
+							'class' => 'next disabled'
+						)
+                      );
+                  ?>
+               </ul>
+           </div>
    </div>
