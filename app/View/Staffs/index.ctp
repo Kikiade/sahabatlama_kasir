@@ -2,7 +2,7 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>Dashboard</h5>
+      <h5>Staff</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
@@ -16,6 +16,11 @@
    </div>
  </div>
 <div class="line"></div>
+        
+ 
+<!-- Main content wrapper -->
+ <div class="wrapper">
+   <br />
         <!-- Breadcrumbs -->
         <div class="bc">
             <ul id="breadcrumbs" class="breadcrumbs">
@@ -31,11 +36,6 @@
                  <li class="current"><a href="#">Current page</a></li>
             </ul>
         </div>
- 
-<!-- Main content wrapper -->
- <div class="wrapper">
-   <br />
-        <h1>Staff</h1>
         
         <!-- Sales Log -->
        	<div class="widget">

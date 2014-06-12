@@ -2,7 +2,7 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>Dashboard</h5>
+      <h5>Sales Log</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
@@ -21,7 +21,21 @@
 <!-- Main content wrapper -->
  <div class="wrapper">
    <br />
-        <h1>Sales Log</h1>
+       <!-- Breadcrumbs -->
+       <div class="bc">
+            <ul id="breadcrumbs" class="breadcrumbs">
+                 <li>
+                      <a href="#">Dashboard</a>
+                 </li>
+                 <li>
+                      <a href="#">Content stuff</a>
+                 </li>
+                 <li>
+                      <a href="#">Tables</a>
+                 </li>
+                 <li class="current"><a href="#">Current page</a></li>
+            </ul>
+        </div>
         
         <!-- Sales Log -->
        	<div class="widget">
@@ -68,6 +82,7 @@
 															  'separator' => ' ',
 															  'tag' => 'li',
 															  'currentClass' => 'active',
+															  '' => ''
                       ));
                         echo $this->Paginator->next(__('>'), array(
 							'tag' => 'li',

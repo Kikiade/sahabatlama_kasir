@@ -2,7 +2,7 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>Dashboard</h5>
+      <h5>Customers</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
@@ -22,7 +22,21 @@
 <!-- Main content wrapper -->
  <div class="wrapper">
    <br />
-     <h1>Customers</h1>
+     <!-- Breadcrumbs -->
+        <div class="bc">
+            <ul id="breadcrumbs" class="breadcrumbs">
+                 <li>
+                      <a href="#">Dashboard</a>
+                 </li>
+                 <li>
+                      <a href="#">Content stuff</a>
+                 </li>
+                 <li>
+                      <a href="#">Tables</a>
+                 </li>
+                 <li class="current"><a href="#">Current page</a></li>
+            </ul>
+        </div>
         
       <!-- Customers -->
        <div class="widget">

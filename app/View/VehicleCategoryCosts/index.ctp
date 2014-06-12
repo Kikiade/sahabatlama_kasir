@@ -2,7 +2,7 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>Dashboard</h5>
+      <h5>Vehicle Category Cost</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
@@ -23,7 +23,21 @@
 <!-- Main content wrapper -->
  <div class="wrapper">
  <br />
-	<h1>Vehicle Category Cost</h1>
+	<!-- Breadcrumbs -->
+        <div class="bc">
+            <ul id="breadcrumbs" class="breadcrumbs">
+                 <li>
+                      <a href="#">Dashboard</a>
+                 </li>
+                 <li>
+                      <a href="#">Content stuff</a>
+                 </li>
+                 <li>
+                      <a href="#">Tables</a>
+                 </li>
+                 <li class="current"><a href="#">Current page</a></li>
+            </ul>
+        </div>
 
         <div class="widget">
           <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/full2.png" alt="" class="titleIcon" /><h6>Vehicle Category Cost		</h6></div>
