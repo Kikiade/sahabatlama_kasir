@@ -7,55 +7,55 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="js/plugins/spinner/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/spinner/jquery.mousewheel.js"></script>
 
-<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
-<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
-<script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
-<script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
-<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
-<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.sparkline.min.js"></script>
 
-<script type="text/javascript" src="js/plugins/forms/uniform.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
-<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
-<script type="text/javascript" src="js/plugins/forms/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/uniform.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/chosen.jquery.min.js"></script>
 
-<script type="text/javascript" src="js/plugins/wizard/jquery.form.js"></script>
-<script type="text/javascript" src="js/plugins/wizard/jquery.validate.min.js"></script>
-<script type="text/javascript" src="js/plugins/wizard/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/wizard/jquery.form.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/wizard/jquery.validate.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/wizard/jquery.form.wizard.js"></script>
 
-<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
-<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
-<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
-<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/uploader/jquery.plupload.queue.js"></script>
 
-<script type="text/javascript" src="js/plugins/tables/datatable.js"></script>
-<script type="text/javascript" src="js/plugins/tables/tablesort.min.js"></script>
-<script type="text/javascript" src="js/plugins/tables/resizable.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/tables/datatable.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/tables/tablesort.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/tables/resizable.min.js"></script>
 
-<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
-<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/ui/jquery.sourcerer.js"></script>
 
-<script type="text/javascript" src="js/plugins/jquery.fullcalendar.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.elfinder.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/jquery.elfinder.js"></script>
 
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/custom.js"></script>
 
-<script type="text/javascript" src="js/charts/chart.js"></script>
+<script type="text/javascript" src="<?php echo $this->webroot; ?>js/charts/chart.js"></script>
 <!-- Include external files and scripts here (See HTML helper for more info.) -->
 <?php
 //link CSS
@@ -75,14 +75,14 @@ echo $this->fetch('script');
         
 <!-- Left navigation -->
    <ul id="menu" class="nav">
-        <li class="dash"><a href="" title="" class="active"><span>Dashboard</span></a></li>
+        <li class="dash"><a href="" title=""><span>Dashboard</span></a></li>
         <li class="ui"><a href="#" title=""><span>User</span></a></li>
-        <li class="ui"><a href="http://localhost/sl_kasir/Staffs" title="" class="exp"><span>Staff</span></a></li>
-        <li class="ui"><a href="http://localhost/sl_kasir/Customers" title="" class="exp"><span>Customer</span></a></li>
+        <li class="ui"><a href="http://localhost/sl_kasir/staffs" title=""><span>Staff</span></a></li>
+        <li class="ui"><a href="http://localhost/sl_kasir/customers" title=""><span>Customer</span></a></li>
         <li class="ui"><a href="#" title="" class="exp"><span>Vehicle</span><strong>2</strong></a>
             <ul class="sub">
                 <li><a href="http://localhost/sl_kasir/vehiclecategories" title="">Vehicle Category</a></li>
-                <li><a href="http://localhost/sl_kasir/VehicleCategoryCosts" title="">Vehicle Category Cost</a></li>
+                <li><a href="http://localhost/sl_kasir/vehiclecategoryCosts" title="">Vehicle Category Cost</a></li>
             </ul>
         </li>
         <li class="ui"><a href="http://localhost/sl_kasir/saleslogs" title=""><span>Sales Log</span></a></li>
