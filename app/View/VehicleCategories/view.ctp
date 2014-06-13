@@ -2,12 +2,12 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>Dashboard</h5>
+      <h5>View Vehicle Category</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
              <ul>
-               <li class="mUser"><a href="http://localhost/sl_kasir/VehicleCategories" title=""><span class="users"></span></a>
+               <li class="mUser"><a href="http://localhost/sl_kasir/VehicleCategories" title="View List"><span class="views"></span></a>
                 <ul class="mSub1">
                  </ul>
                </li>
@@ -21,8 +21,7 @@
 <!-- Main Content Wrapper -->
 <div class="wrapper">
    <br />
-    <h1>View</h1>
-      
+    
       <!-- View -->
             <div class="widget">
                 <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/preview.png" alt="" class="titleIcon" />

@@ -2,12 +2,12 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>Dashboard</h5>
+      <h5>View Staffs</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
              <ul>
-             	<li class="mUser"><a href="http://localhost/sl_kasir/Staffs" title="View"><span class="users"></span></a>
+             	<li class="mUser"><a href="http://localhost/sl_kasir/Staffs" title="View"><span class="views"></span></a>
                 <ul class="mSub1">
                  </ul>
                </li>
@@ -20,7 +20,6 @@
 <!-- Main Content Wrapper -->
 <div class="wrapper">
    <br />
-	<h1>View</h1>
     	
         <!-- View -->
             <div class="widget">
@@ -41,7 +40,7 @@
             </div>
             <div class="widget content" style="">
               <div class="body textC">
-              	<a href="http://localhost/sl_kasir/staff/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
+              	<a href="http://localhost/sl_kasir/staffs/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
                 <a href="http://localhost/sl_kasir/staff/index" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
               </div>
             </div>

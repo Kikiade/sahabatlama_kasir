@@ -7,7 +7,7 @@
           </div>
            <div class="middleNav">
              <ul>
-             	<li class="mUser"><a href="http://localhost/sl_kasir/Staffs" title="View"><span class="users"></span></a>
+             	<li class="mUser"><a href="http://localhost/sl_kasir/Staffs" title="View"><span class="views"></span></a>
                 <ul class="mSub1">
                  </ul>
                </li>
