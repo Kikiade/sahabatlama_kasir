@@ -42,6 +42,21 @@
                   <label>Created :</label>
                   <div class="formRight"><label><?php echo $post['NewsComment']['created'] ?></label></div>
                 </div>
+                <div class="formRow">
+                  <label>Status :</label>
+                    <div class="formRight">
+                      <label>
+                        <?php if($post['NewsComment']['status'] == 1)
+                           {
+                             echo "Active";
+                           }
+                           else{
+                             echo "Not Active";
+                           }
+                         ?>
+                      </label>
+                    </div>
+                </div>
             </div>
             <div class="widget content" style="">
               <div class="body textC">

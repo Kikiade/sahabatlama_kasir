@@ -2,12 +2,12 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>News Categpry</h5>
+      <h5>News Category</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
              <ul>
-               <li class="mUser"><a href="http://localhost/sl_kasir" title="Add"><span class="users"></span></a>
+               <li class="mUser"><a href="http://localhost/sl_kasir/newscategories/add" title="Add"><span class="users"></span></a>
                 <ul class="mSub1">
                 </ul>
                </li>

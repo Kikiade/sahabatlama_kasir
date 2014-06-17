@@ -85,13 +85,11 @@ echo $this->fetch('script');
                 <li><a href="http://localhost/sl_kasir/vehiclecategoryCosts" title="">Vehicle Category Cost</a></li>
             </ul>
         </li>
-	<li class="ui"><a href="#" title="" class="exp"><span>News</span><strong>2</strong></a>
+	<li class="ui"><a href="#" title="" class="exp"><span>News</span><strong>3</strong></a>
 	     <ul class="sub">
-		<li><a href="#" title="">News Category</a></li>
-		<li class="ui">
-			<a href="#" title="" class="exp"><span>News Content</span></a>
-			<li><a href="#" title="">News Test</a></li>
-		</li>
+		      <li><a href="http://localhost/sl_kasir/newscategories" title="">News Category</a></li>
+		      <li><a href="http://localhost/sl_kasir/" title="">News Content</a></li>
+		      <li><a href="http://localhost/sl_kasir/newscomments" title="">News Comment</a></li>
 	     </ul>
 	</li>
         <li class="ui"><a href="http://localhost/sl_kasir/saleslogs" title=""><span>Sales Log</span></a></li>
