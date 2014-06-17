@@ -28,16 +28,31 @@
                 <h6>View Vehicle Category</h6></div>
                   <div class="formRow">
                   	<label>Vehicle Name :</label>
-    			  	 <div class="formRight"><label><?php echo $post['VehicleCategory']['name']?></label></div>
-                   </div>
-                   <div class="formRow">
+    			  	        <div class="formRight"><label><?php echo $post['VehicleCategory']['name']?></label></div>
+                  </div>
+                  <div class="formRow">
                   	<label>Price :</label>
-    			  	 <div class="formRight"><label><?php echo $post['VehicleCategory']['price'] ?></label></div>
-                   </div>
-                   <div class="formRow">
-                  	<label>Created :</label>
-    			  	 <div class="formRight"><?php echo $post['VehicleCategory']['created'] ?></div>
-                   </div>               
+    			  	       <div class="formRight"><label><?php echo $post['VehicleCategory']['price'] ?></label></div>
+                  </div>
+                  <div class="formRow">
+                    <label>Created :</label>
+    			  	       <div class="formRight"><?php echo $post['VehicleCategory']['created'] ?></div>
+                  </div> 
+                  <div class="formRow">
+                  <label>Status :</label>
+                    <div class="formRight">
+                      <label>
+                        <?php if($post['VehicleCategory']['status'] == 1)
+                           {
+                             echo "Active";
+                           }
+                           else{
+                             echo "Not Active";
+                           }
+                         ?>
+                      </label>
+                    </div>
+                </div>              
             </div>
             <div class="widget content" style="">
               <div class="body textC">

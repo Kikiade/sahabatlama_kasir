@@ -37,6 +37,21 @@
                   <label>Created :</label>
                   <div class="formRight"><label><?php echo $post['VehicleCategoryCost']['created']; ?></label></div>
                 </div>
+                <div class="formRow">
+                  <label>Status :</label>
+                    <div class="formRight">
+                      <label>
+                        <?php if($post['VehicleCategoryCost']['status'] == 1)
+                           {
+                             echo "Active";
+                           }
+                           else{
+                             echo "Not Active";
+                           }
+                         ?>
+                      </label>
+                    </div>
+                </div>
             </div>
             <div class="widget content" style="">
               <div class="body textC">

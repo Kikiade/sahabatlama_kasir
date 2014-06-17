@@ -7,9 +7,9 @@
             parent::beforeFilter();
             $this->Auth->allow('add', 'logout','index','edit','delete','view', 'add');
         }
-
+        
         function index(){
-            $this->set('newsCategories', $this->NewsCategory->find('all'));
+            $this->set('news_categories', $this->NewsCategory->find('all'));
             
             Configure::write('debug', 2);
             
@@ -76,7 +76,7 @@
             }
         }
         function afterFilter(){
-            if($this->action!= 'newscategory'){
+            if($this->action != 'newscategory'){
                 $this->authenticate;
             }
         }

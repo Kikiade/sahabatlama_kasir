@@ -30,8 +30,16 @@
                   <div class="formRight"><label><?php echo ($newscategories['NewsCategory']['name']);?></label></div>
                 </div>
                 <div class="formRow">
-                  <label>Created :</label>
-                  <div class="formRight"><label><?php echo ($newscategories['NewsCategory']['status']);?></label></div>
+                  <label>Status :</label>
+                  <div class="formRight"><label><?php if($newscategories['NewsCategory']['status'] == 1){
+                                                        echo "Active";
+                                                    }
+                                                    else{
+                                                      echo "Not Active";
+                                                    }
+                                                ;?>
+                                         </label>
+                  </div>
                 </div>
             </div>
             <div class="widget content" style="">
