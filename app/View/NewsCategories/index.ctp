@@ -2,7 +2,7 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>News Categpry</h5>
+      <h5>News Category</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
