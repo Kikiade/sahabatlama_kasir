@@ -1,28 +1,24 @@
 <?php
-    class NewsContent extends AppModel{
+    class Content extends AppModel{
         public $belongsTo = array(
-            'NewsCategory' => array(
-                'className' => 'NewsCategory',
-                'foreignKey' => 'news_category_id'
+            'NewsContent' => array(
+                'className' => 'NewsContent',
+                'foreignKey' => 'model_id'
             )
         );
         
         public $validate = array(
-            'title' => array (
+            'modelname' => array (
                 'rule' => 'NotEmpty'
             ),
-            'description' => array(
+            'type' => array(
                 'rule' => 'NotEmpty'
             ),
-            'posted'=> array(
+            'host'=> array(
                 'rule' => 'NotEmpty' 
             ),
-            'status' => array(
-                'valid' => array(
-                    'rule' => array('inList', array('0', '1')),
-                    'message' => 'Please enter a valid status',
-                    'allowEmpty' => false
-                )
+            'url' => array(
+                'rule' => 'NotEmpty'   
             )
         );
     }

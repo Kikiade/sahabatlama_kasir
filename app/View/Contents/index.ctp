@@ -2,7 +2,7 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>News Content </h5>
+      <h5>Content</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
@@ -44,28 +44,27 @@
              <thead>
                 <tr>
                     <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
-                    <td><center><?php echo $this->Paginator->sort('title','title');?></center></td>
-                    <td><center><?php echo $this->Paginator->sort('description', 'Description');?></center></td>
-		    <td><center><?php echo $this->Paginator->sort('posted', 'Posted');?></center></td>
-                    <td><center><?php echo $this->Paginator->sort('News Category', 'News Category Name');?></center></td>
-                    <td><center><?php echo $this->Paginator->sort('status', 'Status');?></center></td>
-                    <td><center><?php echo $this->Paginator->sort('created', 'Created');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('News Content','Model ID');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('type', 'Type');?></center></td>
+		    <td><center><?php echo $this->Paginator->sort('host', 'Host');?></center></td>
+                    <td><center><?php echo $this->Paginator->sort('url', 'URL');?></center></td>
                     <td><center>Action</center></td>
                 </tr>
               </thead>  
-                <?php foreach ($newscontents as $newscontent): ?>
+                <?php foreach ($contents as $content): ?>
                 <tbody>
                     <tr>
                         <td><?php echo $newscontent ['NewsContent']['id']; ?></td>
                         <td><?php echo $newscontent ['NewsContent']['title']; ?></td>
                         <td><?php echo $newscontent ['NewsContent']['description']; ?></td>
-                        <td><?php echo $newscontent ['NewsContent']['posted']; ?></tdT                        <td><?php echo $newscontent ['NewsCategory']['name']; ?></td>
+                        <td><?php echo $newscontent ['NewsContent']['posted']; ?></td>
+                        <td><?php echo $newscontent ['NewsCategory']['name']; ?></td>
                         <td>
                             <?php
                                 if($newscontent['NewsContent']['status'] == 0)
                                     {
                                         echo 'Not Active';
-T                                    }
+                                    }
                                         else{
                                             echo 'Active';
                                     } 
