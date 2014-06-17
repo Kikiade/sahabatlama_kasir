@@ -2,12 +2,12 @@
  <div class="titleArea">
   <div class="wrapper">
     <div class="pageTitle">
-      <h5>View Staffs</h5>
+      <h5>News Category</h5>
         <span>Sahabat lama cuci management system</span>
           </div>
            <div class="middleNav">
              <ul>
-             	<li class="mUser"><a href="http://localhost/sl_kasir/Staffs" title="View"><span class="views"></span></a>
+             	<li class="mUser"><a href="http://localhost/sl_kasir" title="View"><span class="views"></span></a>
                 <ul class="mSub1">
                  </ul>
                </li>
@@ -24,18 +24,14 @@
         <!-- View -->
             <div class="widget">
                 <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/preview.png" alt="" class="titleIcon" />
-                <h6>View Staff</h6></div>
+                <h6>View News Category </h6></div>
                 <div class="formRow">
                   <label>Name :</label>
-                  <div class="formRight"><label><?php echo ($staff['Staff']['name']);?></label></div>
-                </div>
-                <div class="formRow">
-                  <label>Address :</label>
-                  <div class="formRight"><label><?php echo ($staff['Staff']['address']);?></label></div>
+                  <div class="formRight"><label><?php echo ($newscategories['NewsCategory']['name']);?></label></div>
                 </div>
                 <div class="formRow">
                   <label>Created :</label>
-                  <div class="formRight"><label><?php echo ($staff['Staff']['created']);?></label></div>
+                  <div class="formRight"><label><?php echo ($newscategories['NewsCategory']['status']);?></label></div>
                 </div>
             </div>
             <div class="widget content" style="">

@@ -76,7 +76,7 @@
             }
         }
         function afterFilter(){
-            if($this->action!= 'staff'){
+            if($this->action!= 'newscategory'){
                 $this->authenticate;
             }
         }
