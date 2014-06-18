@@ -59,13 +59,14 @@
                         <td><?php echo $newscontent ['NewsContent']['id']; ?></td>
                         <td><?php echo $newscontent ['NewsContent']['title']; ?></td>
                         <td><?php echo $newscontent ['NewsContent']['description']; ?></td>
-                        <td><?php echo $newscontent ['NewsContent']['posted']; ?></tdT                        <td><?php echo $newscontent ['NewsCategory']['name']; ?></td>
+                        <td><?php echo $newscontent ['NewsContent']['posted']; ?></td>                      
+                        <td><?php echo $newscontent ['NewsCategory']['name']; ?></td>
                         <td>
                             <?php
                                 if($newscontent['NewsContent']['status'] == 0)
                                     {
                                         echo 'Not Active';
-T                                    }
+                                    }
                                         else{
                                             echo 'Active';
                                     } 
