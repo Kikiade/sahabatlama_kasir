@@ -4,6 +4,16 @@
             'NewsCategory' => array(
                 'className' => 'NewsCategory',
                 'foreignKey' => 'news_category_id'
+            )    
+        );
+
+        public $hasOne = array(
+            'Content' => array(
+                'className' => 'Content',
+                'foreignKey' => 'model_id',
+                'conditions' => '',
+                'fields' => '',
+                'order' => ''
             )
         );
         

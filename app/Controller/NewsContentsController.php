@@ -37,11 +37,8 @@
             $this->set('newscontents', $newscontent);
         }
         function add(){
-	    $this->set('news_categories', $this->NewsContent->NewsCategory->find(
-		'list',
-		array(
-		    'order' => array('NewsCategory.id')
-            )));    
+	        $this->set('news_categories', $this->NewsContent->NewsCategory->find('list', array('order' => array('NewsCategory.id'))));    
+            /*
             if($this->request->is('post')){
                 $this->NewsContent->Create();
                 if($this->NewsContent->save($this->request->data)){
@@ -49,7 +46,20 @@
                     return $this->redirect(array('action' => 'index'));
                 }
                 $this->Session->setFlash(__('Unable to add your news content'));
+            }*/
+            if($this->request->is('post')){
+                $this->NewsContent->create();
             }	
+                if(!empty($this->request->data)){
+                    $newscontent = $this->NewsContent->save($this->request->data);
+
+                    if(!empty($newscontent)){
+                        $this->request->data['Content']['model_id'] = $this->NewsContent->id;
+                        $this->NewsContent->Content->save($this->request->data);
+                    }
+                    return $this->redirect(array('action'=> 'index'));
+                }
+
         }
         function edit($id = null) {
 	    $this->set('news_categories', $this->NewsContent->NewsCategory->find(
