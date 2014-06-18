@@ -88,7 +88,7 @@ echo $this->fetch('script');
 	<li class="ui"><a href="#" title="" class="exp"><span>News</span><strong>3</strong></a>
 	     <ul class="sub">
 		      <li><a href="http://localhost/sl_kasir/newscategories" title="">News Category</a></li>
-		      <li><a href="http://localhost/sl_kasir/" title="">News Content</a></li>
+		      <li><a href="http://localhost/sl_kasir/newscontents" title="">News Content</a></li>
 		      <li><a href="http://localhost/sl_kasir/newscomments" title="">News Comment</a></li>
 	     </ul>
 	</li>
