@@ -60,26 +60,15 @@
 
                 		<td><?php echo $categories['VehicleCategory']['created']; ?></td>
                     		<td>
-				    <?php
-					if($categories['VehicleCategory']['status'] == 0){
-					    echo "Not Active";
-					}else{
-					    echo "Active";    
-					}
-				    ?>
-				</td>
-
-                			<td><?php echo $categories['VehicleCategory']['created']; ?></td>
-                    		<td><?php 
-                                    if($categories['VehicleCategory']['status'] == 1){
-                                            echo "Active";
-                                        }
-                                        else{
-                                            echo "Not Active";
-                                        }
-                                 ?>
-                            </td>
-
+              				    <?php
+                  					if($categories['VehicleCategory']['status'] == 0){
+                  					    echo "Not Active";
+                  					}
+                            else{
+                  					    echo "Active";    
+                  					}
+              				    ?>
+              				</td>
                     		<td>
                         		<?php echo $this->Html->link('View', array('controller' => 'vehicle_categories', 'action' => 'view', 
                             	$categories['VehicleCategory']['id'])); ?> 
