@@ -1,6 +1,5 @@
 <?php
     class UsersController extends AppController{
-        var $name = 'Users';
         var $helpers = array('Html','Form');
         /*
         function view_active(){
@@ -10,6 +9,15 @@
         function beforeFilter(){
             parent::beforeFilter();
             $this->Auth->allow('add', 'logout');
+        }
+        
+        function login(){
+            if($this->request->is('post')){
+                if($this->Auth->login()){
+                    $this->redirect($this->Auth->redirect());
+                }
+                $this->Session->setFlash(__('Invalid username or password'));
+            }
         }
         
         function index(){
@@ -24,16 +32,7 @@
             }
             $this->set('user', $this->User->read(null, $id));
         }
-        
-        function login(){
-            if($this->request->is('post')){
-                if($this->Auth->login()){
-                    return $this->redirect($this->Auth->redirect());
-                }
-                $this->Session->setFlash(__('Login succes'));
-            }
-        }
-        
+
         function add(){
             if($this->request->is('post')){
                 $this->User->Create();
@@ -81,18 +80,6 @@
         function logout(){
             return $this->redirect($this->Auth->logout());
         }
-       /** 
-        function authenticate(){
-            if(!$this->Session->check('User')){
-                 $this->redirect(array('controller' => 'users', 'action' => 'index'));
-            }
-        }
-        **/
-        function afterFilter(){
-            if($this->action != 'user'){
-                $this->authenticate;
-            }
-        }
-        
+       
     } 
 ?>

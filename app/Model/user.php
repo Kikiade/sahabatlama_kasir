@@ -1,8 +1,9 @@
 <?php
+//app/Model/User.php
 App::uses('AppModel', 'Model');
-App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
+App::uses('SimplePasswordhasher', 'Controller/Component/Auth');
 
-    class User Extends AppModel{
+class User extends AppModel{
     function beforeSave($option = array()){
         if(isset($this->data[$this->alias]['password'])){
             $passwordHasher = new SimplePasswordhasher();
@@ -10,30 +11,27 @@ App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
         }
         return true;
     }
-        public $validate = array(
-            'name' => array(
-                'required' => array(
-                    'rule' => array('NotEmpty'),
-                    'message' => 'Name is Required'
-                )    
-            ),
-            'username' => array(
-                'required' => array(
-                    'rule' => array('notEmpty'),
-                    'message' => 'Username is Required'
+    
+    public $validate = array(
+        'username' => array(
+        'required' => array(
+        'rule' => array ('notEmpty'),
+        'message' => 'A username is rquired'
+        ) 
+       ),
+        'password' => array(
+        'required' => array(
+        'rule' => array ('notEmpty'),
+        'message' => 'A password is required'
+        )
+       ),
+        'role' => array(
+            'valid' => array(
+                'rule' => array('inList', array('admin', 'author')),
+                'message' => 'Please enter a valid role',
+                'allowEmpty' => false
                 )
-            ),
-            'password' => array(
-                'rule' => array('minLength', '8'),
-                'message' => 'Password minimum 8 characters'
-            ),
-            'status' => array(
-                'status' => array(
-                    'rule' => array('inlist', array('0', '1')),
-                    'message' => 'Plase try again',
-                    'allowEmpty' => 'false'
-                )
-            )
-        );
-    }
+            )    
+     );
+}
 ?>

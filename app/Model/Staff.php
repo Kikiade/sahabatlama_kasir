@@ -20,5 +20,9 @@
                 )
             )
         );
+
+        public function isOwnedBy ($staff, $user){
+            return $this->field('id', array('id' => $staff, 'user_id' => $user)) !==false;   
+        }
     }
 ?>

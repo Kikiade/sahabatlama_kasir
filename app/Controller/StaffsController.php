@@ -76,12 +76,22 @@
                 return $this->redirect(array('action' => 'index'));
             }
         }
-        function afterFilter(){
-            if($this->action!= 'staff'){
-                $this->authenticate;
-            }
-        }
-        
+
+        public function isAuthorized($user){
+             //All registered user can add post
+             if ($this->action == 'add'){
+                 return true;
+             }
+             
+             //The owner of a post can edit and delete it
+             if(in_array($this->action, array('edit', 'delete'))){
+                 $staffId = (int) $this->request->params['pass'][0];
+                 if($this->Staff->isOwnedBy($staffId, $user['id'])){
+                     return true;
+                 }
+             }
+             return parent::isAuthorized ($user);
+         }
     }
     
 ?>

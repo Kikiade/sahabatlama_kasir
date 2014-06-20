@@ -31,24 +31,22 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-    public $components = array(
+        public $components = array(
         'Session',
         'Auth' => array(
-            'loginRedirect' => array(
-                'controller' => 'Staff',
-                'action' => 'index'
-            ),
+            'loginRedirect' => array('controller' => 'staffs', 'action' => 'index'),
             'logoutRedirect' => array(
-                'controller' => 'Users',
-                'action' => 'login',
-                
-            )
+                'controller' => 'pages',
+                'action' => 'display',
+                'home'
+            ),
+            'authorize' => array('Controller') // Added this line
         )
     );
     function beforeFilter(){
-        //$this->Auth->allow('index', 'view');
+        $this->Auth->allow('index', 'dashboards');
     }
-    function isAuthorized($user){
+    function isAuthorized($uler){
         if(isset($user['role']) && $user['role'] === 'admin'){
             return true;
         }
