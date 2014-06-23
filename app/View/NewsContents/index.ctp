@@ -40,13 +40,14 @@
         </div>
 
         <div class="widget">
-            <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
+        <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/frames.png" alt="" class="titleIcon" /><h6>News Content</h6></div>
+            <table cellpadding="0" cellspacing="0" width="100%" class="display sTable">
              <thead>
                 <tr>
                     <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('title','title');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('description', 'Description');?></center></td>
-		    <td><center><?php echo $this->Paginator->sort('posted', 'Posted');?></center></td>
+		                <td><center><?php echo $this->Paginator->sort('posted', 'Posted');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('News Category', 'News Category Name');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('status', 'Status');?></center></td>
                     <td><center><?php echo $this->Paginator->sort('created', 'Created');?></center></td>

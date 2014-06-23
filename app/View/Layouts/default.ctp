@@ -10,10 +10,6 @@
 <script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/spinner/jquery.mousewheel.js"></script>
 
 <script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/excanvas.min.js"></script>
-<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.js"></script>
-<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.orderBars.js"></script>
-<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.pie.js"></script>
-<script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.flot.resize.js"></script>
 <script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/charts/jquery.sparkline.min.js"></script>
 
 <script type="text/javascript" src="<?php echo $this->webroot; ?>js/plugins/forms/uniform.js"></script>

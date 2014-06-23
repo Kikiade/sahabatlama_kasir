@@ -37,10 +37,10 @@
             </ul>
         </div>
         
-        <!-- Sales Log -->
+        <!-- News Categories-->
        	<div class="widget">
-         <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/full2.png" alt="" class="titleIcon" /><h6>News Category</h6></div>
-         <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
+         <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/frames.png" alt="" class="titleIcon" /><h6>News Category</h6></div>
+         <table cellpadding="0" cellspacing="0" width="100%" class="display sTable">
          <thead>
                 <tr>
                     <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
