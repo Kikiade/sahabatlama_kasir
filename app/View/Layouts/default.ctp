@@ -56,7 +56,7 @@
 <script type="text/javascript" src="<?php echo $this->webroot; ?>js/custom.js"></script>
 
 <script type="text/javascript" src="<?php echo $this->webroot; ?>js/charts/chart.js"></script>
-<!-- Include external files and scripts here (See HTML helper for more info.) -->
+
 <?php
 //link CSS
 echo $this->Html->css('main');
@@ -75,7 +75,7 @@ echo $this->fetch('script');
         
 <!-- Left navigation -->
    <ul id="menu" class="nav">
-        <li class="dash"><a href="" title=""><span>Dashboard</span></a></li>
+        <li class="dash"><a href="http://localhost/sl_kasir" title=""><span>Dashboard</span></a></li>
         <li class="ui"><a href="#" title=""><span>User</span></a></li>
         <li class="ui"><a href="http://localhost/sl_kasir/staffs" title=""><span>Staff</span></a></li>
         <li class="ui"><a href="http://localhost/sl_kasir/customers" title=""><span>Customer</span></a></li>

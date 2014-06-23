@@ -23,7 +23,7 @@
     
         
         <!-- Form -->
-        <?php echo $this->Form->create('NewsContent', array('url' => '', 'class' => 'form'));?>
+        <?php echo $this->Form->create('NewsContent', array('url' => '', 'class' => 'form','type'=>'file'));?>
             <fieldset>
                 <div class="widget">
        			 <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/list.png" alt="" class="titleIcon" /><h6>Add New News Content </h6>
@@ -108,6 +108,15 @@
 						'after' 		=> '</div>',
 						'placeholder'	=> 'Model Name',
 						'default' 		=> "http://localhost/sl_kasir/"
+						)); 
+				 ?>
+				 <?php
+				 	echo $this->Form->input('url', array(
+						'type'			=> 'file',
+						'label'			=> 'File (*)',
+						'div' 			=> 'formRow',
+						'between'		=> '<div class="formRight">',
+						'after' 		=> '</div>'
 						)); 
 				 ?>
                         <div class="formSubmit"> 
