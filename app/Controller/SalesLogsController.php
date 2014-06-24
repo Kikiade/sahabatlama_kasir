@@ -9,13 +9,25 @@
 		}
 		function index(){
 			$this->set('sales_logs', $this->SalesLog->find('all'));
-			/*$data	=	$this->SalesLog->find("all",array(
+			$data	=	$this->SalesLog->find("all",array(
 						"conditions"	=>	array(
 							"SalesLog.id"	=>	"1"
 						)
 					));
-			pr($data);*/
+
 			
+			$total = $this->SalesLog->find('all',
+				array(array('fields' => array('SUM(vehicle.nyuci_share) AS gaji'),
+							'conditions'=>array('SalesLog.user_id = staf.id'
+								=>$this->params['SalesLog']['id']))));	
+
+			$virtualFields = array('total' => 'COUNT(staff.name) AS nyuci_share');
+				$total = $this->SalesLog->find('all', 
+					array(array('fields' => array('total'), 
+								'conditions'=>array('SalesLog.user_id = staf.id'
+									=>$this->params['SalesLog']['id']))));
+			pr($total);
+
 			//paging page
 			$this->paginate = array(
 				 'limit' => 2
