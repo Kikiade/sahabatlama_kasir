@@ -29,15 +29,15 @@
                 <h6>View Vehicle Category</h6></div>
                 <div class="formRow">
                   <label>Staff Name :</label>
-                  <div class="formRight"><label><?php echo $post['SalesLog']['staff_id']; ?></label></div>
+                  <div class="formRight"><label><?php echo $post['Staff']['name']; ?></label></div>
                 </div>
                 <div class="formRow">
-                  <label>Vehicle Name :</label>
-                  <div class="formRight"><label><?php echo $post['SalesLog']['vehicle_id']; ?></label></div>
+                  <label>Vehicle Category Name :</label>
+                  <div class="formRight"><label><?php echo $post['VehicleCategory']['name']; ?></label></div>
                 </div>
                 <div class="formRow">
                   <label>User Name :</label>
-                  <div class="formRight"><label><?php echo $post['SalesLog']['user_id']; ?></label></div>
+                  <div class="formRight"><label><?php echo $post['VehicleCategory']['price']; ?></label></div>
                 </div>
                 <div class="formRow">
                   <label>Transaction Time</label>

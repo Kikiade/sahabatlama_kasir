@@ -75,19 +75,19 @@ echo $this->fetch('script');
         <li class="ui"><a href="#" title=""><span>User</span></a></li>
         <li class="ui"><a href="http://localhost/sl_kasir/staffs" title=""><span>Staff</span></a></li>
         <li class="ui"><a href="http://localhost/sl_kasir/customers" title=""><span>Customer</span></a></li>
-        <li class="ui"><a href="#" title="" class="exp"><span>Vehicle</span><strong>2</strong></a>
-            <ul class="sub">
-                <li><a href="http://localhost/sl_kasir/vehiclecategories" title="">Vehicle Category</a></li>
-                <li><a href="http://localhost/sl_kasir/vehiclecategoryCosts" title="">Vehicle Category Cost</a></li>
-            </ul>
-        </li>
-	<li class="ui"><a href="#" title="" class="exp"><span>News</span><strong>3</strong></a>
-	     <ul class="sub">
-		      <li><a href="http://localhost/sl_kasir/newscategories" title="">News Category</a></li>
-		      <li><a href="http://localhost/sl_kasir/newscontents" title="">News Content</a></li>
-		      <li><a href="http://localhost/sl_kasir/newscomments" title="">News Comment</a></li>
-	     </ul>
-	</li>
+            <li class="ui"><a href="#" title="" class="exp"><span>Vehicle</span><strong>2</strong></a>
+                <ul class="sub">
+                    <li><a href="http://localhost/sl_kasir/vehiclecategories" title="">Vehicle Category</a></li>
+                    <li><a href="http://localhost/sl_kasir/vehiclecategoryCosts" title="">Vehicle Category Cost</a></li>
+                </ul>
+            </li>
+        	<li class="ui"><a href="#" title="" class="exp"><span>News</span><strong>3</strong></a>
+        	     <ul class="sub">
+        		      <li><a href="http://localhost/sl_kasir/newscategories" title="">News Category</a></li>
+        		      <li><a href="http://localhost/sl_kasir/newscontents" title="">News Content</a></li>
+        		      <li><a href="http://localhost/sl_kasir/newscomments" title="">News Comment</a></li>
+        	     </ul>
+        	</li>
         <li class="ui"><a href="http://localhost/sl_kasir/saleslogs" title=""><span>Sales Log</span></a></li>
     </ul>
 </div>
@@ -106,25 +106,6 @@ echo $this->fetch('script');
             </div>
         </div>
     </div>
-    
-   <!-- Title area -->
-    <!--<div class="titleArea">
-        <div class="wrapper">
-            <div class="pageTitle">
-                <h5>Dashboard</h5>
-                <span>Sahabat lama cuci management system</span>
-            </div>
-            <div class="middleNav">
-                <ul>
-                    <li class="mUser"><a title=""><span class="users"></span></a>
-                        <ul class="mSub1">
-                            <li><a href="#" title="">Add user</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>-->
     
     <?php echo $this->fetch('content'); ?>
     

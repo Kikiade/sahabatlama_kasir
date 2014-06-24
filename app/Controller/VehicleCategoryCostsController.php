@@ -18,7 +18,7 @@
 			//pr($data);
             //Paging page            
             $this->paginate = array(
-                'limit' => 2
+                'limit' => 10
             );
             $vehicle_category_costs = $this->paginate('VehicleCategoryCost');
             $this->set('vehicle_category_costs', $vehicle_category_costs);

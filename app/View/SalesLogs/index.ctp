@@ -39,57 +39,50 @@
         
         <!-- Sales Log -->
        	<div class="widget">
-         <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/frames.png" alt="" class="titleIcon" /><h6>Sales Log</h6></div>
-         <table cellpadding="0" cellspacing="0" width="100%" class="display sTable">
-         <thead>
-            <tr>
-                <td><center><?php echo $this->Paginator->sort('id','ID');?></center></td>
-                <td><center><?php echo $this->Paginator->sort('Staff','Staff');?></center></td>
-                <td><center><?php echo $this->Paginator->sort('VehicleCategory','Vehicle Category Name');?></center></td>
-                <td><center><?php echo $this->Paginator->sort('VehicleCategory','Price');?></center></td>
-                <td><center><?php echo $this->Paginator->sort('VehicleCategory','Nyuci Share');?></center></td>
-                <td><center><?php echo $this->Paginator->sort('transaction_time','Transaction Time');?></center></td>
-                <td><center>Action</center></td>
-            </tr>
-         </thead>
-        	<?php foreach ($sales_logs as $saleslog): ?>
-            <tbody>
-            <tr>
-                <td><?php echo $saleslog['SalesLog']['id'] ?></td>
-                <td><?php echo $saleslog['Staff']['name'] ?></td>
-                <td><?php echo $saleslog['VehicleCategory']['name'] ?></td>
-                <td><?php echo $saleslog['VehicleCategory']['price'] ?></td>
-                <td><?php echo $saleslog['VehicleCategory']['nyuci_share'] ?></td>
-                <td><?php echo $saleslog['SalesLog']['transaction_time'] ?></td>
-                <td>
-                    <?php echo $this->Html->link('View', array('action' => 'view', $saleslog['SalesLog']['id'])); ?>
-                    <?php echo $this->Html->link('Delete', array('action' => 'delete', $saleslog['SalesLog']['id'])); ?>
-                </td>
-            </tr>
-            </tbody>
-            <?php endforeach; ?>
-           	<?php unset ($saleslog); ?>
-        </table>
+           <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/frames.png" alt="" class="titleIcon" /><h6>Sales Log</h6></div>
+           <table cellpadding="0" cellspacing="0" width="100%" class="display sTable">
+             <thead>
+                <tr>
+                    <td><center>Name</center></td>
+                    <td><center>Share</center></td>
+                    
+                </tr>
+             </thead>
+            	<?php foreach ($data as $data): ?>
+                <tbody>
+                  <tr>
+                      <td><?php echo $data['Staff']['name'] ?></td>
+                      <td><?php echo $data['0']['TOTAL'] ?></td>
+                      
+                  </tr>
+                </tbody>
+              <?php endforeach; ?>
+              <?php unset ($saleslog); ?>
+            </table>
         </div>
+      <!--  
         <div class="pagination">
             <ul class="pages">
                   <?php
+                  /*
                         echo $this->Paginator->prev(__('<'), array(
-							'tag' => 'li',
-							'class' => 'prev disabled'
-						));
-                        echo $this->Paginator->numbers(array(
-															  'separator' => ' ',
-															  'tag' => 'li',
-															  'currentClass' => 'active',
-															  '' => ''
-                      ));
-                        echo $this->Paginator->next(__('>'), array(
-							'tag' => 'li',
-							'class' => 'next disabled'
-						)
+            							'tag' => 'li',
+            							'class' => 'prev disabled'
+            						));
+                                    echo $this->Paginator->numbers(array(
+            															  'separator' => ' ',
+            															  'tag' => 'li',
+            															  'currentClass' => 'active',
+            															  '' => ''
+                                  ));
+                                    echo $this->Paginator->next(__('>'), array(
+            							'tag' => 'li',
+            							'class' => 'next disabled'
+            						)
                       );
+                     */ 
                   ?>
-               </ul>
-           </div>
+            </ul>
+        </div>
+      -->
 </div>
