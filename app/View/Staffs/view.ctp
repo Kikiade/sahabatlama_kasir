@@ -56,7 +56,7 @@
             <div class="widget content" style="">
               <div class="body textC">
               	<a href="http://localhost/sl_kasir/staffs/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
-                <a href="http://localhost/sl_kasir/staff/index" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
+                <a href="http://localhost/sl_kasir/staffs" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
               </div>
             </div>
 </div>

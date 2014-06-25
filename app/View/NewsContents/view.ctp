@@ -7,7 +7,7 @@
           </div>
            <div class="middleNav">
              <ul>
-               <li class="mUser"><a href="http://localhost/sl_kasir" title="View List"><span class="views"></span></a>
+               <li class="mUser"><a href="http://localhost/sl_kasir/newscontents" title="View List"><span class="views"></span></a>
                 <ul class="mSub1">
                  </ul>
                </li>
@@ -44,8 +44,8 @@
             </div>
             <div class="widget content" style="">
               <div class="body textC">
-                <a href="http://localhost/sl_kasir/vehcilecategorycost/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
-                <a href="http://localhost/sl_kasir/VehicleCategoryCosts" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
+                <a href="http://localhost/sl_kasir/newscontents/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
+                <a href="http://localhost/sl_kasir/newscontents" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
               </div>
             </div>
 </div>

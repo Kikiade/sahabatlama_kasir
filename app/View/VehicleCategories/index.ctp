@@ -26,18 +26,57 @@
         <div class="bc">
             <ul id="breadcrumbs" class="breadcrumbs">
                  <li>
-                      <a href="#">Dashboard</a>
+                      <a href="http://localhost/sl_kasir/">Dashboard</a>
                  </li>
-                 <li>
-                      <a href="#">Content stuff</a>
-                 </li>
-                 <li>
-                      <a href="#">Tables</a>
-                 </li>
-                 <li class="current"><a href="#">Current page</a></li>
+                 <li class="current"><a href="http://localhost/sl_kasir/VehicleCategories">View Content</a></li>
             </ul>
         </div>
 
+        <!-- START SEARCH  -->
+          <div class="span6">
+            <div class="toggle" style="border-color:#a0a0a0;">
+              <div class="title closed" id="toggleOpened" style="border-color:#a0a0a0;">
+                <img src="<?php echo $this->webroot?>img/icons/dark/magnify.png" alt="" class="titleIcon"/>
+                <h6 class="red">Search</h6>
+              </div>
+              <div class="body" style="border-color:#a0a0a0;"> 
+                <?php echo $this->Form->Create('search'); ?>
+                  <input name="data[Search][reset]" type="hidden" value="0" id="reset">
+                  <?php //if(!empty($result)): ?>
+                  <fieldset>
+                    <?php
+                      echo $this->Form->input('id', array(
+                        'label'     =>  '::ID::',
+                        'div'       =>  array("class"=>"dataTables_filter"),
+                        'between'   =>  '<div class="formRight">',
+                        'after'     =>  '</div>',
+                        'empty'     =>  'Title',
+                      ));
+                    ?>
+                    <?php
+                      echo $this->Form->input('name', array(
+                        'label'     =>  '::Nama::',
+                        'div'       =>  array("class"=>"dataTables_filter"),
+                        'between'   =>  '<div class="formRight">',
+                        'after'     =>  '</div>',
+                        'empty'     =>  'Title',
+                      ));
+                    ?>
+                  </fieldset>
+                <?php $this->Form->end('Search');?>
+                <a href="javascript:void(0);" title="" class="wButton bluewB ml15 m10" onclick="return SearchAdvance();"><span>Search</span></a>
+                <a href="javascript:void(0);" title="" class="wButton redwB ml15 m10" onclick="ClearSearchAdvance();"><span>Reset</span></a>
+              </div>
+            </div>
+          </div>
+              <?php //else: ?>
+              <?php //if($this->data): ?>
+              <!-- <div id="tahoma"><hr> Sorry, No result found. </div> -->
+              <?php //endif; ?>
+              <?php //endif; ?> 
+        <!-- END SEARCH -->
+
+        <!-- Vehicle Categories -->
         <div class="widget">
           <div class="title"><img src="<?php echo $this->webroot; ?>img/icons/dark/frames.png" alt="" class="titleIcon" /><h6>Vehicle Categories		</h6></div>
             <table cellpadding="0" cellspacing="0" width="100%" class="display sTable">

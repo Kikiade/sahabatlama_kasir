@@ -55,7 +55,7 @@
             </div>
             <div class="widget content" style="">
               <div class="body textC">
-                <a href="http://localhost/sl_kasir/vehcilecategorycost/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
+                <a href="http://localhost/sl_kasir/VehicleCategoryCosts/add" title="" class="wButton greenwB ml15 m10" style="margin:5px"><span>Add More</span></a>
                 <a href="http://localhost/sl_kasir/VehicleCategoryCosts" title="" class="wButton bluewB ml15 m10" style="margin:5px"><span>Back To List</span></a>
               </div>
             </div>

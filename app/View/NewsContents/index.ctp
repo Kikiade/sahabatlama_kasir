@@ -27,15 +27,9 @@
         <div class="bc">
             <ul id="breadcrumbs" class="breadcrumbs">
                  <li>
-                      <a href="#">Dashboard</a>
+                      <a href="http://localhost/sl_kasir/">Dashboard</a>
                  </li>
-                 <li>
-                      <a href="#">Content stuff</a>
-                 </li>
-                 <li>
-                      <a href="#">Tables</a>
-                 </li>
-                 <li class="current"><a href="#">Current page</a></li>
+                 <li class="current"><a href="http://localhost/sl_kasir/newscontents">View Content</a></li>
             </ul>
         </div>
           <!-- START SEARCH  -->
@@ -56,8 +50,7 @@
                         'div'       =>  array("class"=>"dataTables_filter"),
                         'between'   =>  '<div class="formRight">',
                         'after'     =>  '</div>',
-                        'empty'     =>  'Title',
-                        'options'   =>  $id
+                        'empty'     =>  'Title'
                       ));
                     ?>
                     <?php
@@ -66,8 +59,7 @@
                         'div'       =>  array("class"=>"dataTables_filter"),
                         'between'   =>  '<div class="formRight">',
                         'after'     =>  '</div>',
-                        'empty'     =>  'Title',
-                        'options'   =>  $title
+                        'empty'     =>  'Title'
                       ));
                     ?>
                   </fieldset>

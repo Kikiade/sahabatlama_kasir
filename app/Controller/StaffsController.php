@@ -32,6 +32,11 @@
             }
             $this->set('staff', $staff);
         }
+
+        function search(){
+            $this->set('results', $this->Staff->search($this->data['Staff']['id']));
+        }
+
         function add(){
             //post get put
             if($this->request->is('post')){
